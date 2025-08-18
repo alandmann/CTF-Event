@@ -1,0 +1,77 @@
+{
+  "categories": [
+    {
+      "key": "runes_of_sysdom",
+      "label": "Runes of Sysdom",
+      "challenges": [
+        {
+          "id": "sysdom-1",
+          "difficulty": 1,
+          "title": "Base64 Rune",
+          "description": "Decode the arcane string and whisper it back: ZmxhZ3tzdXBlcl9iYXNpYzRfbnJ1bn0=",
+          "flag": "flag{super_basic4_nrun}",
+          "hint": "Try base64; maybe the rune is reversed?",
+          "externalLink": null
+        },
+        {
+          "id": "sysdom-5",
+          "difficulty": 5,
+          "title": "Cron of the Gremlins",
+          "description": "From \"syslog.txt\" determine the gremlin cron that runs every 13 minutes and outputs the secret.",
+          "flag": "flag{cron_13_gremlin}",
+          "hint": "Look for /etc/cron.d style entries.",
+          "externalLink": "https://example.local/artifacts/syslog.txt"
+        },
+        {
+          "id": "sysdom-10",
+          "difficulty": 10,
+          "title": "SUID Relic",
+          "description": "Analyze the given ls -la output and identify which binary's odd perms reveal the relic.",
+          "flag": "flag{suid_path_to_power}",
+          "hint": "SUID root on writable path = danger.",
+          "externalLink": null
+        }
+      ]
+    },
+    {
+      "key": "sigils_of_sanctum",
+      "label": "Sigils of Sanctum",
+      "challenges": [
+        {
+          "id": "sanctum-2",
+          "difficulty": 2,
+          "title": "Hash of the Novice",
+          "description": "This looks like MD5: 5d41402abc4b2a76b9719d911017c592",
+          "flag": "flag{hello}",
+          "hint": "Common hashes map to common words.",
+          "externalLink": null
+        },
+        {
+          "id": "sanctum-6",
+          "difficulty": 6,
+          "title": "JWT Jinx",
+          "description": "A JWT uses 'none' algorithm. Decode the claim 'relic'.",
+          "flag": "flag{jwt_none_alg}",
+          "hint": "Header reveals alg.",
+          "externalLink": null
+        }
+      ]
+    },
+    {
+      "key": "mystic_mischief",
+      "label": "Mystic Mischief",
+      "challenges": [
+        {
+          "id": "mischief-3",
+          "difficulty": 3,
+          "title": "Stego Sprite",
+          "description": "An image hides a zip. Recover it to find: flag{...}",
+          "flag": "flag{zip_in_png}",
+          "hint": "Look for ZIP magic bytes.",
+          "externalLink": "https://example.local/artifacts/mischief.png"
+        }
+      ]
+    }
+  ]
+}
+

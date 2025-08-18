@@ -1,0 +1,12 @@
+[
+  { "pattern": "/^sudo\\s+make\\s+me\\s+a\\s+sandwich$/i", "reward": 50, "message": "Okay, but you're not root. Here's a snack anyway (+50)." },
+  { "pattern": "/^quaelkaas$/i", "reward": 100, "message": "The ancient cheese speaks. (+100)" },
+  { "pattern": "/^rm\\s+-rf\\s+\\/$/i", "reward": -100, "message": "Nice try. Chaos spirits laugh (−100)." },
+  { "pattern": "/konami|up up down down/i", "reward": 75, "message": "The spirits acknowledge your rites (+75)." },
+  { "pattern": "/d[uü]nnstoffwechselendproduktbarbie/i", "reward": 50, "message": "Summoned the meat & peonies avatar (+50)." },
+  { "pattern": "/black\\s*lotus/i", "reward": 125, "message": "You found a Power Nine relic (+125)." },
+  { "pattern": "/^flag\\{i_was_testing_the_easter_eggs\\}$/i", "reward": 25, "message": "Meta recognized (+25)." },
+  { "pattern": "/^idk|i\\s*give\\s*up$/i", "reward": 0, "message": "The Oracle whispers: keep trying." },
+  { "pattern": "/^invoke-?armageddon(\.ps1)?$/i", "reward": -50, "message": "PowerShell gods frown (−50)." },
+  { "pattern": "/^hail\\s*sysdrasil$/i", "reward": 100, "message": "The tree of uptime blesses you (+100)." }
+]

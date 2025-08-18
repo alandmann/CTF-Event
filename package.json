@@ -1,0 +1,20 @@
+{
+  "name": "ctf-jeopardy-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Solo CTF Jeopardy with timers, themes, jokers, and easter eggs",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "build:challenges": "node scripts/generate-hashes.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
