@@ -1,0 +1,41 @@
+/* Reset & basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.5;
+  background: #f0f0f0;
+  color: #111;
+}
+
+button {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+input {
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+}
+
+h1, h2, h3 {
+  margin-bottom: 0.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 0.5rem;
+}
+

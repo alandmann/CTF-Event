@@ -1,0 +1,24 @@
+/* Themes */
+.theme-fantasy { background: radial-gradient(1200px 600px at 50% -200px, rgba(139,92,246,0.25), rgba(10,10,20,1)); color: #e9e7ff; }
+.theme-cli { background: #000; color: #9f9; font-family: "Courier New", monospace; }
+.theme-corporate { background: #f6f7fb; color: #101828; }
+
+/* Expired challenge shattered glass */
+.expired-challenge {
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(255,255,255,0.2),
+    rgba(255,255,255,0.2) 2px,
+    rgba(0,0,0,0.1) 2px,
+    rgba(0,0,0,0.1) 4px
+  );
+  color: #999;
+  text-decoration: line-through;
+}
+
+/* General styles */
+input { padding: 0.25rem; margin-right: 0.25rem; }
+button { cursor:pointer; }
+.modal { position: fixed; inset:0; display:flex; align-items:center; justify-content:center; background: rgba(0,0,0,0.6); }
+.modal .content { max-width: 600px; width: 100%; border-radius: 0.5rem; }
+

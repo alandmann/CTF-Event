@@ -3,6 +3,6 @@ WORKDIR /app
 COPY package.json package-lock.json* ./
 RUN npm install --omit=dev || npm install --omit=dev
 COPY . .
-RUN node scripts/generate-hashes.js
+RUN node scripts/generate-hashes.js || true
 EXPOSE 3000
 CMD ["node", "server.js"]

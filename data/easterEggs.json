@@ -1,0 +1,7 @@
+[
+  { "trigger": "sudo make me a sandwich", "response": "Okay. You're now root. 🥪", "points": 50 },
+  { "trigger": "quaelkaas", "response": "🧀 The sacred cheese reveals a hidden grin.", "points": 25 },
+  { "trigger": "up up down down left right left right b a", "response": "Konami spirits grant you vigor (+100).", "points": 100 },
+  { "trigger": "rm -rf /", "response": "Nice try. Nothing happens… thankfully.", "points": -25 }
+]
+

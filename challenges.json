@@ -1,3 +1,103 @@
 {
-  "categories": []
+  "categories": [
+    {
+      "key": "runes_of_sysdom",
+      "label": "Runes of Sysdom",
+      "challenges": [
+        {
+          "id": "sysdom-1",
+          "difficulty": 1,
+          "title": "Base64 Rune",
+          "description": "Decode the arcane string and whisper it back: ZmxhZ3tzdXBlcl9iYXNpYzRfbnJ1bn0=",
+          "hint": "Try base64.",
+          "externalLink": null,
+          "flagHash": "$2a$10$4feBGp4Pp7oknTfmRIBiyeYnB0MG2kjQaAN0/Dg/zamxpbIE8j8N2"
+        },
+        {
+          "id": "sysdom-5",
+          "difficulty": 5,
+          "title": "Cron of the Gremlins",
+          "description": "From \"syslog.txt\" determine the gremlin cron that runs every 13 minutes and outputs the secret (look in artifact).",
+          "hint": "/etc/cron.d pattern.",
+          "externalLink": "https://example.local/artifacts/syslog.txt",
+          "flagHash": "$2a$10$sH2CoeO2uepyjAJJwVHrVe2UUbV.3Bn7vH0m7nTUINTp0dIhAZQ06"
+        },
+        {
+          "id": "sysdom-10",
+          "difficulty": 10,
+          "title": "SUID Relic",
+          "description": "Analyze the given ls -la output and identify which binary's odd perms reveal the relic.",
+          "hint": "SUID root on writable path = danger.",
+          "externalLink": null,
+          "flagHash": "$2a$10$lbbhWcsCX/pxcP75s2Q49.SDZaIXuN1aOVvGUJNTCDkvYdWFTmK0q"
+        }
+      ]
+    },
+    {
+      "key": "sigils_of_sanctum",
+      "label": "Sigils of Sanctum",
+      "challenges": [
+        {
+          "id": "sanctum-2",
+          "difficulty": 2,
+          "title": "Hash of the Novice",
+          "description": "This looks like MD5: 5d41402abc4b2a76b9719d911017c592",
+          "hint": "Common hashes map to common words.",
+          "externalLink": null,
+          "flagHash": "$2a$10$7ZVpAQBFp0QxhL3Qfmh03.X39KAnEmPQBR53Ja4PfY8ejZZgyDf.a"
+        },
+        {
+          "id": "sanctum-6",
+          "difficulty": 6,
+          "title": "JWT Jinx",
+          "description": "A JWT uses 'none' algorithm. Decode the claim 'relic'.",
+          "hint": "Header reveals alg.",
+          "externalLink": null,
+          "flagHash": "$2a$10$ow1kY7kk4VLk2X/78csJUeCuaB5l.jgxqK6GFcADjQ.mHrZ38bPpG"
+        },
+        {
+          "id": "sanctum-9",
+          "difficulty": 9,
+          "title": "Cipher of the Ouroboros",
+          "description": "A Vigenère loop hides the flag: key = DRAGON. ciphertext in artifact.",
+          "hint": "Vigenère auto-key?",
+          "externalLink": "https://example.local/artifacts/dragon.txt",
+          "flagHash": "$2a$10$1Wz231hlp2GEeRADGyliB.rT0aI6GX2csbbL1zcJiQi1tENV/5vAC"
+        }
+      ]
+    },
+    {
+      "key": "mystic_mischief",
+      "label": "Mystic Mischief",
+      "challenges": [
+        {
+          "id": "mischief-3",
+          "difficulty": 3,
+          "title": "Stego Sprite",
+          "description": "An image hides a zip. Recover it to find: flag{...}",
+          "hint": "Look for ZIP magic bytes.",
+          "externalLink": "https://example.local/artifacts/mischief.png",
+          "flagHash": "$2a$10$YsEuT7u7YJ.KrFhQRJZHN.aTOJgSAUuzToTtgZjk21WXyCs0YI0DW"
+        },
+        {
+          "id": "mischief-7",
+          "difficulty": 7,
+          "title": "TXT in the Noise",
+          "description": "WAV audio with LSB text, extract message.",
+          "hint": "Audacity spectrogram or script.",
+          "externalLink": "https://example.local/artifacts/chant.wav",
+          "flagHash": "$2a$10$WQa3DbGAJ1qJFUjQ2PEuOeFs3ea7QrYD3hEwL.OKkJ/1cx1uXq4sa"
+        },
+        {
+          "id": "mischief-10",
+          "difficulty": 10,
+          "title": "Polyglot Tome",
+          "description": "PDF that is also a PNG and a ZIP. Find the flag.",
+          "hint": "magic bytes at offsets.",
+          "externalLink": "https://example.local/artifacts/polyglot.pdf",
+          "flagHash": "$2a$10$RvwXCsyRLdRj90tye7CdjOV5.tjL/4zWMRSR.B.NB9iaoVfwckVVm"
+        }
+      ]
+    }
+  ]
 }

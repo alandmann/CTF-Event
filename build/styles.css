@@ -5,16 +5,19 @@ body { min-height: 100vh; }
 
 /* Themes */
 body.theme-fantasy { background: radial-gradient(1200px 600px at 50% -200px, rgba(139,92,246,0.25), rgba(10,10,20,1)), #0b0f19; color: #e9e7ff; }
-body.theme-fantasy .panel { background: rgba(22, 18, 43, 0.75); border: 1px solid rgba(139,92,246,0.3);}
+body.theme-fantasy .panel { background: rgba(22, 18, 43, 0.75); border: 1px solid rgba(139,92,246,0.3);} 
+
 body.theme-cli { background: #000; color: #9f9; font-family: "Courier New", monospace; }
 body.theme-cli .panel { background: #001100; border: 1px dashed #0f0; }
+
 body.theme-corporate { background: #f6f7fb; color: #101828; }
 body.theme-corporate .panel { background: #fff; border: 1px solid #e2e8f0; }
 
 .tile { cursor:pointer; }
 .tile.disabled { opacity: .5; pointer-events:none; }
+
 .badge { padding: 0.1rem 0.5rem; border-radius: 9999px; border: 1px solid currentColor; font-size: .75rem; }
+
 .modal { position: fixed; inset: 0; display: none; align-items:center; justify-content:center; background: rgba(0,0,0,.6); padding:1rem; }
 .modal.open { display:flex; }
 .modal .content { max-width: 48rem; width: 100%; }
-

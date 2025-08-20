@@ -1,0 +1,7 @@
+{
+  "consult_oracle": { "max": 5, "cost": 100 },
+  "chronoshard": { "max": 2, "seconds": 30 },
+  "reroll_trial": { "max": 3 },
+  "wildcard_ritual": { "max": 1 }
+}
+

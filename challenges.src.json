@@ -10,16 +10,16 @@
           "title": "Base64 Rune",
           "description": "Decode the arcane string and whisper it back: ZmxhZ3tzdXBlcl9iYXNpYzRfbnJ1bn0=",
           "flag": "flag{super_basic4_nrun}",
-          "hint": "Try base64; maybe the rune is reversed?",
+          "hint": "Try base64.",
           "externalLink": null
         },
         {
           "id": "sysdom-5",
           "difficulty": 5,
           "title": "Cron of the Gremlins",
-          "description": "From \"syslog.txt\" determine the gremlin cron that runs every 13 minutes and outputs the secret.",
+          "description": "From \"syslog.txt\" determine the gremlin cron that runs every 13 minutes and outputs the secret (look in artifact).",
           "flag": "flag{cron_13_gremlin}",
-          "hint": "Look for /etc/cron.d style entries.",
+          "hint": "/etc/cron.d pattern.",
           "externalLink": "https://example.local/artifacts/syslog.txt"
         },
         {
@@ -54,6 +54,15 @@
           "flag": "flag{jwt_none_alg}",
           "hint": "Header reveals alg.",
           "externalLink": null
+        },
+        {
+          "id": "sanctum-9",
+          "difficulty": 9,
+          "title": "Cipher of the Ouroboros",
+          "description": "A Vigenère loop hides the flag: key = DRAGON. ciphertext in artifact.",
+          "flag": "flag{ouroboros_revealed}",
+          "hint": "Vigenère auto-key?",
+          "externalLink": "https://example.local/artifacts/dragon.txt"
         }
       ]
     },
@@ -69,6 +78,24 @@
           "flag": "flag{zip_in_png}",
           "hint": "Look for ZIP magic bytes.",
           "externalLink": "https://example.local/artifacts/mischief.png"
+        },
+        {
+          "id": "mischief-7",
+          "difficulty": 7,
+          "title": "TXT in the Noise",
+          "description": "WAV audio with LSB text, extract message.",
+          "flag": "flag{wav_lsb_text}",
+          "hint": "Audacity spectrogram or script.",
+          "externalLink": "https://example.local/artifacts/chant.wav"
+        },
+        {
+          "id": "mischief-10",
+          "difficulty": 10,
+          "title": "Polyglot Tome",
+          "description": "PDF that is also a PNG and a ZIP. Find the flag.",
+          "flag": "flag{triple_polyglot}",
+          "hint": "magic bytes at offsets.",
+          "externalLink": "https://example.local/artifacts/polyglot.pdf"
         }
       ]
     }

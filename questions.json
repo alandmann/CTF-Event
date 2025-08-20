@@ -1,0 +1,15 @@
+{
+  "Web Exploits": {
+    "100": { "question": "What does XSS stand for?", "answer": "cross site scripting" },
+    "200": { "question": "Name one HTTP method besides GET and POST", "answer": "put" }
+  },
+  "Crypto": {
+    "100": { "question": "What is the Caesar cipher shift value if 'B' -> 'E'?", "answer": "3" },
+    "200": { "question": "What’s the output length of SHA256 in bits?", "answer": "256" }
+  },
+  "Trivia": {
+    "100": { "question": "What year was the first CTF competition held?", "answer": "1996" },
+    "200": { "question": "What does CTF stand for?", "answer": "capture the flag" }
+  }
+}
+

@@ -1,0 +1,39 @@
+:root {
+  --accent: #8b5cf6;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* Themes */
+.theme-fantasy {
+  background: radial-gradient(1200px 600px at 50% -200px, rgba(139,92,246,0.25), rgba(10,10,20,1)), #0b0f19;
+  color: #e9e7ff;
+}
+
+.theme-cli {
+  background: #000;
+  color: #9f9;
+}
+
+.theme-corporate {
+  background: #f6f7fb;
+  color: #101828;
+}
+
+button, select, input {
+  border: 1px solid currentColor;
+  background: transparent;
+  color: inherit;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+a { color: inherit; }
+
