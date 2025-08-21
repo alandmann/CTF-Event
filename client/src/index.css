@@ -1,39 +1,103 @@
-:root {
-  --accent: #8b5cf6;
+/* Board Layout */
+.board {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
 }
 
-* { box-sizing: border-box; }
-
-html, body, #root {
-  height: 100%;
-  margin: 0;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+.category-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-/* Themes */
-.theme-fantasy {
-  background: radial-gradient(1200px 600px at 50% -200px, rgba(139,92,246,0.25), rgba(10,10,20,1)), #0b0f19;
-  color: #e9e7ff;
+.category-title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
-.theme-cli {
-  background: #000;
-  color: #9f9;
-}
-
-.theme-corporate {
-  background: #f6f7fb;
-  color: #101828;
-}
-
-button, select, input {
-  border: 1px solid currentColor;
-  background: transparent;
-  color: inherit;
-  padding: 0.4rem 0.6rem;
-  border-radius: 0.4rem;
+.tile {
+  background: #222;
+  color: #fff;
+  padding: 1rem;
+  border: 2px solid #555;
   cursor: pointer;
+  text-align: center;
+  transition: 0.2s;
+}
+.tile:hover {
+  background: #444;
+}
+.tile-title {
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+.tile-points {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
-a { color: inherit; }
+/* Shattered effect */
+.shattered {
+  background: repeating-linear-gradient(
+    45deg,
+    #222,
+    #222 10px,
+    #333 10px,
+    #333 20px
+  );
+  position: relative;
+  overflow: hidden;
+}
+.shattered::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("https://www.transparenttextures.com/patterns/crissxcross.png");
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(3px);
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  color: #000;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+}
+
+.close-btn,
+.download-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+.close-btn {
+  background: #c00;
+  color: #fff;
+}
+
+.download-btn {
+  background: #007bff;
+  color: #fff;
+  display: block;
+}
 

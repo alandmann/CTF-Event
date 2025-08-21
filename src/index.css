@@ -1,41 +1,132 @@
-/* Reset & basic styling */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html, body, #root {
-  height: 100%;
-  font-family: Arial, sans-serif;
-}
-
 body {
-  line-height: 1.5;
-  background: #f0f0f0;
-  color: #111;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #eee;
+  text-align: center;
 }
 
-button {
-  background: #fff;
-  border: 1px solid #ccc;
-  border-radius: 0.25rem;
-  padding: 0.25rem 0.5rem;
-  cursor: pointer;
-}
-
-input {
-  padding: 0.25rem;
-  border-radius: 0.25rem;
-  border: 1px solid #ccc;
-}
-
-h1, h2, h3 {
-  margin-bottom: 0.5rem;
+h1 {
+  margin: 1rem;
+  font-size: 2.5rem;
 }
 
 .grid {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.category {
+  background: #222;
+  padding: 1rem;
+  border-radius: 8px;
+  min-width: 250px;
+}
+
+.category h2 {
+  margin-bottom: 0.5rem;
+  color: #ffcc00;
+}
+
+.tiles {
+  display: flex;
+  flex-direction: column;
   gap: 0.5rem;
+}
+
+.tile {
+  background: #333;
+  border: 2px solid #555;
+  padding: 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.2s ease;
+  width: 100%;
+  text-align: center;
+}
+
+.tile:hover {
+  background: #444;
+  transform: scale(1.05);
+}
+
+.tile-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.tile-points {
+  font-size: 1.2rem;
+  color: #66ff66;
+}
+
+/* Make button look like div */
+.tile {
+  border: none;
+  outline: none;
+  display: block;
+  color: inherit;
+  font: inherit;
+}
+
+/* Shattered glass effect for category 3 */
+.tile.shattered {
+  position: relative;
+  overflow: hidden;
+  background: #222;
+  color: #bbb;
+}
+
+.tile.shattered::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-conic-gradient(
+    from 0deg,
+    rgba(255, 255, 255, 0.2) 0deg 10deg,
+    transparent 10deg 20deg
+  );
+  opacity: 0.2;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: #222;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  text-align: left;
+}
+
+.modal h2 {
+  margin-top: 0;
+}
+
+.modal button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #ff4444;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
